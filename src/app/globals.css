@@ -256,7 +256,7 @@ width: 500px;
 @media(max-width: 768px){
   .heroCON{
     background-image: url(../images/phoneBG.svg);
-    /* width: 344px; */
+    width: 344px;
     height: 717px;
     margin-left: 20px; 
     margin-right: 20px; 
@@ -314,8 +314,8 @@ width: 500px;
   }
  
   .docImg{
-    margin-top: 740px;
-    left: 17%;
+    margin-top: 738px;
+    left: 14%;
     width: 150px;
   }
   .heroRightTxt{
@@ -323,7 +323,7 @@ width: 500px;
     color: #BB4F77;
     font-size: 24px;
     width: 158px;
-    right: 30px;
+    right: 45px;
   }
   .heroSpan {
     color: #C36386;
