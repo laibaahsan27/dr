@@ -5,9 +5,11 @@
 }
 .heroCON{
   background-image: url(../images/newhero.svg);
-  width: 1445px;
+  /* width: 1445px; */
   height: 500px;
   margin-left: 45px; 
+  margin-right: 45px;
+  border-radius: 30px;
   /* display: flex;
   justify-content: center; */
   /* margin-right: 45px;
@@ -254,9 +256,11 @@ width: 500px;
 @media(max-width: 768px){
   .heroCON{
     background-image: url(../images/phoneBG.svg);
-    width: 344px;
+    /* width: 344px; */
     height: 717px;
     margin-left: 20px; 
+    margin-right: 20px; 
+
   }
   h1{
     font-size: 35px;
