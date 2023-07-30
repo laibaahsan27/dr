@@ -1,95 +1,87 @@
+"use client";
+import './globals.css'
 import Image from 'next/image'
-import styles from './page.module.css'
+import DOC from '../images/doc.svg'
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import AnimatedText from "./AnimatedText";
+import RIGHT from '../images/CaretRight.svg'
 
 export default function Home() {
+  const list=[
+    {
+      id: 1,
+      up: '40+',
+      down: 'Treatments and Services'
+    },{
+      id: 2,
+      up: '8',
+      down: 'Years of Experience'
+    },{
+      id: 3,
+      up: '96%',
+      down: 'Customer Satisfaction'
+    },{
+      id: 4,
+      up: '45+',
+      down: 'Success Therapies'
+    }
+  ];
+
+  const [replay, setReplay] = useState(true);
+  // Placeholder text data, as if from API
+  const placeholderText = [
+    { type: "heading1", text: "Discover  Your True  Beauty with  Expert" },
+    {
+      type: "heading2",
+      text: "Aesthetic  Care"
+    }
+  ];
+
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.025
+      }
+    }
+  };
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div style={{backgroundColor: '#FFF5F4'}}>
+      <div className="heroCON">
+        <div className='heroRightTxt'>
+        Hi, I’m Dr. Akanksha Agarwal <span className='heroSpan'>PGDCC  |  B.D.S.</span>
         </div>
+        <motion.div
+            className="App"
+            initial="hidden"
+            animate={replay ? "visible" : "hidden"}
+            variants={container}
+          >
+            <div className="containerL">
+              {placeholderText.map((item, index) => {
+                return <AnimatedText {...item} key={index} />;
+              })}
+            </div>
+          </motion.div>
+
+        <Image className='docImg' src={DOC} alt="" />
+        <div className='textThree'>Experience Unmatched Bliss! Pamper and Rejuvenate Your Mind, Body, and Soul</div>
+        <div className='heroBTNS'>
+          <button className='heroBTN1'>Book an appointment <Image className='rightIMG' src={RIGHT} alt="" /></button>
+          <button className='heroBTN2'>Consult Now</button>
+        </div>
+        {list.map((list)=>{
+        return(
+          <div className='outerLIST' key={list.id}>
+            <div className='setLIST'>
+              <div className='listUP'>{list.up}</div>
+              <div className='listDOWN'>{list.down}</div>
+            </div>
+          </div>
+        )}
+        )}
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
