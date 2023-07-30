@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import AnimatedText from "./AnimatedText";
 import RIGHT from '../images/CaretRight.svg'
 import RIGHTTWO from '../images/CaretRight2.svg'
+import BGABOUT from '../images/aboutBG.svg'
 
 export default function Home() {
   const list=[
@@ -86,6 +87,7 @@ export default function Home() {
       
       <div className='homeAbout'>
         <div className='headAbout'>ABOUT</div>
+        <Image className='aboutBG' src={BGABOUT} alt="" />
         <div className='aboutTxt'>Meet Dr. Akanksha Agarwal, a career-oriented and enthusiastic facial aesthetician with a passion for excellence. <span className='aboutTxtSpan'> Currently serving as a consultant at LA MiDAS aesthetics and visiting consultant/lecturer in One Aesthetics</span>, Gurgaon, Dr. Agarwal's expertise extends to multiple clinics in Delhi, Hyderabad, Moradabad, and Bangalore.</div>
         <div className='hover-underline-animation'>
         <a className='aboutLinkL' href="/">Learn more about me <Image className='aboutArrow' src={RIGHTTWO} alt="" /> </a>

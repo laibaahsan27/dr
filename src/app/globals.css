@@ -247,6 +247,9 @@ width: 500px;
  transform: scaleX(1);
  transform-origin: bottom left;
 }
+.aboutBG{
+  display: none;
+}
 
 @media(max-width: 768px){
   .heroCON{
@@ -307,23 +310,26 @@ width: 500px;
   }
  
   .docImg{
-    margin-top: 700px;
-    left: 10%;
+    margin-top: 740px;
+    left: 17%;
     width: 150px;
   }
   .heroRightTxt{
-    top: 900px;
+    top: 930px;
     color: #BB4F77;
     font-size: 24px;
     width: 158px;
-    right: 50px;
+    right: 30px;
   }
   .heroSpan {
     color: #C36386;
     font-size: 16px;
   }
+  .homeAbout{
+    padding-left: 30px;
+  }
   .aboutTxt{
-    margin-top: 220px;
+    margin-top: 30px;
     font-size: 18px;
     width: 329px;
   }
@@ -333,6 +339,10 @@ width: 500px;
   .aboutArrow{
     width: 22px;
     height: 22px;
+  }
+  .aboutBG{
+    display: block;
+    margin-top: 25px;
   }
 
 
