@@ -158,6 +158,7 @@ width: 500px;
 
 }
 .heroRightTxt{
+  z-index: 1;
   position: absolute;
   right: 150px;
   top: 170px;
@@ -322,7 +323,7 @@ width: 500px;
   .heroRightTxt{
     top: 930px;
     color: #BB4F77;
-    font-size: 24px;
+    font-size: 20px;
     width: 158px;
     right: 55px;
   }
