@@ -353,3 +353,106 @@ width: 500px;
 
 
 }
+
+.aANDaCON{
+  display: flex;
+  justify-content: center;
+  background: rgba(237, 189, 207, 0.42);
+  padding: 30px 0;
+}
+.headAwardsDESK{
+  margin-right: 70px;
+  width: 280px;
+  height: 106px;
+  margin-top: 50px;
+}
+.headAwardsPHONE{
+  display: none;
+}
+.awardsCon{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.outerLIST2{
+  display: flex;
+  border-radius: 13px;
+  background: #EDBDCF;
+  width: 385px;
+  height: 70px;
+  padding: 5px 10px 0px 10px;
+  margin: 10px;
+}
+.trophy{
+  width: 60px;
+  height: 60px;
+}
+.setLIST2{
+  padding-top: 14px;
+  padding-left: 10px;
+}
+.listUP2{
+  color: #9C003C;
+  font-family: 'Nunito Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125.9%; /* 25.18px */
+  text-transform: capitalize;
+}
+.listDOWN2{
+  padding-top: 4px;
+  color: #9C003C;
+  font-family: 'Nunito Sans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115.9%; /* 18.544px */
+  text-transform: uppercase;
+}
+@media(max-width: 768px){
+  .awardsCon{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .aANDaCON{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFF5F4;
+    padding: 0px 0px;
+  }
+  .headAwardsDESK{
+    display: none;
+  }
+  .headAwardsPHONE{
+    display: block;
+    margin: 25px auto;
+    width: 280px;
+    height: 106px;
+  }
+  .outerLIST2{
+    border-radius: 13px;
+    width: 290px;
+    height: 77px;
+    padding: 0px 10px 0px 10px;
+    margin:  10px auto;
+  }
+  .listUP2{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .listDOWN2{
+    padding-top: 2px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .setLIST2{
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  .trophy{
+    margin-top: 13px;
+  }
+}

@@ -8,6 +8,11 @@ import AnimatedText from "./AnimatedText";
 import RIGHT from '../images/CaretRight.svg'
 import RIGHTTWO from '../images/CaretRight2.svg'
 import BGABOUT from '../images/aboutBG.svg'
+import AWARDS from '../images/Trophy.svg'
+import HEADDESK from '../images/andAwards.svg'
+import HEADPHONE from '../images/andAwardsPhone.svg'
+
+
 
 export default function Home() {
   const list=[
@@ -27,6 +32,25 @@ export default function Home() {
       id: 4,
       up: '45+',
       down: 'Success Therapies'
+    }
+  ];
+  const list2=[
+    {
+      id: 1,
+      up: 'Six sigma healthcare award',
+      down: 'March 2022'
+    },{
+      id: 2,
+      up: 'Excellence in facial esthetics',
+      down: 'December 2017',
+    },{
+      id: 3,
+      up: 'Best young cosmetologist of the year',
+      down: 'december 2018'
+    },{
+      id: 4,
+      up: 'Interdisciplinary dentist of the year',
+      down: 'December 2017'
     }
   ];
 
@@ -91,9 +115,30 @@ export default function Home() {
         <div className='aboutTxt'>Meet Dr. Akanksha Agarwal, a career-oriented and enthusiastic facial aesthetician with a passion for excellence. <span className='aboutTxtSpan'> Currently serving as a consultant at LA MiDAS aesthetics and visiting consultant/lecturer in One Aesthetics</span>, Gurgaon, Dr. Agarwal's expertise extends to multiple clinics in Delhi, Hyderabad, Moradabad, and Bangalore.</div>
         <div className='hover-underline-animation'>
         <a className='aboutLinkL' href="/">Learn more about me <Image className='aboutArrow' src={RIGHTTWO} alt="" /> </a>
-        </div>
-        
+        </div> 
       </div>    
+      <div>
+
+        <div className='aANDaCON'>
+          <div>
+            <Image className='headAwardsDESK' src={HEADDESK} alt="" />
+            <Image className='headAwardsPHONE' src={HEADPHONE} alt="" />
+          </div>
+          <div className='awardsCon'>
+            {list2.map((list2)=>{
+              return(
+                <div className='outerLIST2' key={list2.id}>
+                  <Image className='trophy' src={AWARDS} alt="" />
+                  <div      className='setLIST2'>
+                    <div className='listUP2'>{list2.up}</div>
+                    <div className='listDOWN2'>{list2.down}</div>
+                  </div>
+                </div>
+              )}
+              )}
+        </div>
+        </div>
+      </div>
 
     </div>
   )
