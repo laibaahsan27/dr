@@ -1,0 +1,116 @@
+
+
+
+.footerCON{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 25px;
+    background: #C36386;
+    margin: 50px;
+    padding: 30px;
+}
+.footer1{
+    color: #F7DEE4;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.containerLogoFooter{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.footerFlower{
+    width: 100px;
+    height: 100px;
+}
+.footerUL{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgba(247, 222, 228, 0.61);
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.headLI{
+    color: #F7DEE4;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.footerLOGO{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.footerCON1{
+    display: flex;
+    margin-left: 30px;
+}
+.footerCON2{
+    display: flex;
+    margin-right: 100px;
+}
+@media(max-width: 768px) {
+    .footerCON{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 25px;
+        background: #C36386;
+        margin: 30px;
+        padding: 20px;
+    }
+    .footerCON1{
+        display: flex;
+        margin-left: 0px;
+    }
+    .footerCON2{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+    .headLI{
+        color: #F7DEE4;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    .footerUL{
+        font-size: 16px;
+        line-height: 25px;
+        padding-left: 0;
+    }
+    .footer1{
+        color: #F7DEE4;
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .containerLogoFooter{
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    .footerFlower{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+

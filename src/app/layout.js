@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Nav from '@/components/Nav/Nav'
+import Foot from '@/components/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Poppins&display=swap" rel="stylesheet"></link>
       </head>
       <body className={inter.className} style={{margin:'0'}}>
-      <Nav/>{children}</body>
+      <Nav/>
+      {children}
+      <Foot/>
+      </body>
     </html>
   )
 }
