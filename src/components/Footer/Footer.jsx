@@ -9,7 +9,7 @@ import MAIL from '../../images/MailLogo.svg'
 
 export default function Footer() {
   return (
-    <div>
+    <div style={{backgroundColor:'#FFF5F4'}}>
       <div className='footerCON'>
         <div className='footerCON1'>
         <div className='footer1'>
