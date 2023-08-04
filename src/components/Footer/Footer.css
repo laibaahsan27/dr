@@ -1,13 +1,16 @@
 
 
-
+.footerOUT{
+    background: #FFF5F4;
+    padding: 50px 0;
+}
 .footerCON{
     display: flex;
     justify-content: space-between;
     gap: 10px;
     border-radius: 25px;
     background: #C36386;
-    margin: 50px;
+    margin: 0 50px;
     padding: 30px;
 }
 .footer1{
