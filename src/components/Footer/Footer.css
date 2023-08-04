@@ -63,6 +63,11 @@
     margin-right: 100px;
 }
 @media(max-width: 768px) {
+    .footerOUT{
+        background: #FFF5F4;
+        padding: 30px 0;
+    }
+    
     .footerCON{
         display: flex;
         justify-content: left;
@@ -70,7 +75,7 @@
         gap: 10px;
         border-radius: 25px;
         background: #C36386;
-        margin: 30px;
+        margin: 0 30px;
         padding: 20px;
     }
     .footerCON1{
