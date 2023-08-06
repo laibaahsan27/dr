@@ -454,3 +454,9 @@ width: 500px;
     margin-top: 13px;
   }
 }
+
+
+.outerLIST3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

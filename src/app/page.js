@@ -11,10 +11,45 @@ import BGABOUT from '../images/aboutBG.svg'
 import AWARDS from '../images/Trophy.svg'
 import HEADDESK from '../images/andAwards.svg'
 import HEADPHONE from '../images/andAwardsPhone.svg'
+import img1 from '../images/card1img.svg'
+import img2 from '../images/card2img.svg'
+import img3 from '../images/card3img.svg'
+import img4 from '../images/card4img.svg'
+import img5 from '../images/card5img.svg'
+import img6 from '../images/card6img.svg'
 
 
 
 export default function Home() {
+  const list3=[
+    {
+      id: 1,
+      text: 'Laser Hair Reduction',
+      image: img1,
+    },{
+      id: 2,
+      text: 'PRP Therapies',
+      image: img2,
+    },{
+      id: 3,
+      text: 'Botox or fillers',
+      image: img3,
+    },{
+      id: 4,
+      text: 'Hair Transplant',
+      image: img4,
+    }
+    ,{
+      id: 5,
+      text: 'Non surgical facelift',
+      image: img5,
+    }
+    ,{
+      id: 6,
+      text: 'Customized Treatment',
+      image: img6,
+    }
+  ];
   const list=[
     {
       id: 1,
@@ -55,7 +90,6 @@ export default function Home() {
   ];
 
   const [replay, setReplay] = useState(true);
-  // Placeholder text data, as if from API
   const placeholderText = [
     { type: "heading1", text: "Discover  Your True  Beauty with  Expert" },
     {
@@ -137,6 +171,22 @@ export default function Home() {
               )}
               )}
         </div>
+        </div>
+      </div>
+
+      <div>
+        <div></div>
+        <div>
+        {list3.map((list3)=>{
+              return(
+                <div className='outerLIST3' key={list3.id}>
+                  <div>
+                    <div className=''>{list3.text}</div>
+                    <Image src={list3.image} alt="" />
+                  </div>
+                </div>
+              )}
+              )}  
         </div>
       </div>
 
