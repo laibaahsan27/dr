@@ -176,13 +176,13 @@ export default function Home() {
 
       <div>
         <div></div>
-        <div>
+        <div className='cardsCON'>
         {list3.map((list3)=>{
               return(
                 <div className='outerLIST3' key={list3.id}>
                   <div>
-                    <div className=''>{list3.text}</div>
-                    <Image src={list3.image} alt="" />
+                    <div className='cardsTxt'>{list3.text}</div>
+                    <Image className='cardsImg' src={list3.image} alt="" />
                   </div>
                 </div>
               )}
