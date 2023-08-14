@@ -83,3 +83,40 @@
         display: flex;
     }
 }
+/* Example CSS for a responsive menu */
+.menubar__button {
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .submenu {
+    display: none;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+  
+  .submenu.active {
+    display: block;
+  }
+  
+  /* Display responsive button below 768px */
+  @media (max-width: 767px) {
+    .menubar__button {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu.active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

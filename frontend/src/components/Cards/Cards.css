@@ -1,0 +1,34 @@
+.cardHead{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .cardsCON{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 130px;
+     row-gap: 50px;
+     justify-content: center;
+     margin: 0px auto;
+  }
+  .outerLIST3{
+    border: 1px solid rgba(156, 0, 60, 1);
+    padding: 30px 20px 17px 20px;
+  }
+  
+  .cardsTxt{
+    color: #BB4F77;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.9%; 
+    width: 180px;
+  }
+  .cardsImg{
+    width: 280px;
+    height: 150px;
+    margin-top: 20px;
+  }
