@@ -455,8 +455,22 @@ width: 500px;
   }
 }
 
-
-.outerLIST3{
+.cardsCON{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.outerLIST3{
+  
+}
+.cardsTxt{
+  color: #BB4F77;
+  font-family: 'Poppins';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115.9%; /* 37.088px */
+}
+.cardsImg{
+  width: 280px;
+  height: 150px;
 }
