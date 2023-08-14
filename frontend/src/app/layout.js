@@ -22,8 +22,8 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&family=Pacifico&family=Poppins&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Poppins&display=swap" rel="stylesheet"></link>
       </head>
-      <body className={inter.className} style={{margin:'0'}}>
-      {/* <Nav/> */}
+      <body suppressHydrationWarning={true} className={inter.className} style={{margin:'0'}}>
+      <Nav/>
       {children}
       <Foot/>
       </body>
