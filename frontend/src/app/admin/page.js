@@ -19,13 +19,11 @@ const AdminLoginPage = () => {
 
     const data = await response.json();
     setMessage(data.message);
-
-    if (response.status === 200) {
-      const token = data.auth;
-      localStorage.setItem('adminToken', token); // Store the JWT token in localStorage
-      window.location.href = '/admin/dashboard';
-    }
   };
+
+  if(message === 'Admin login successful') {
+    window.location.href = '/admin/dashboard';
+  }
 
   return (
     <div>
