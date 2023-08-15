@@ -11,7 +11,7 @@ const page = () => {
   }, []);
 
   return (
-    <div>page</div>
+    <div>WELCOME TO ADMIN DASHBOARD</div>
   )
 }
 
