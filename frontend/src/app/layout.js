@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Poppins&display=swap" rel="stylesheet"></link>
       </head>
       <body suppressHydrationWarning={true} className={inter.className} style={{margin:'0'}}>
-      {/* <Nav/> */}
+      <Nav/>
       {children}
       <Foot/>
       </body>

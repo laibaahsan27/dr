@@ -7,11 +7,11 @@
 .navbar {
     /* padding: 0px 20px; */
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     /* align-items: center; */
     background-color: rgba(255, 245, 244, 1);
     /* color: white; */
-    padding: 1rem;
+    padding: 20px 40px;
 }
 
 .containerLogo {
@@ -22,7 +22,7 @@
 }
 
 .logoName{
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     display: flex;
     color: #BB4F77;
     font-family: 'Poppins';
@@ -119,4 +119,143 @@
       flex-direction: column;
     }
   }
-  
+  .menu {
+    position: relative; /* Step 1: Relative position for the parent */
+}
+.subMenuParent{
+  position: relative;
+}
+
+  .middleNav{
+    display: flex;
+    gap: 10px;
+    margin: 5px 0 0 0;
+    padding: 0;
+    /* position: relative; */
+
+  }
+  .liNav{
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navBTN{
+    color: #C36386;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 10px;
+  }
+  .navBTN:hover{
+    background-color: rgba(252, 230, 238, 1);
+  }
+  .submenu{
+    border-radius: 25px;
+    background: #F7DEE4;
+    padding: 40px;
+    position: absolute;
+    top: 100%;        
+    left: 0; 
+    /* transform: translateX(-50%);  */
+    /* right: 0; */
+    z-index: 10;  
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    grid-auto-flow: column; */
+   
+  }
+  .subMenuDiv{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px; */
+  }
+  .subMenuItemsCon{
+    display: block;
+  }
+  .liSubMenu{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .navMenuHead{
+    color: #BB4F77;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 117.5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 200px;
+
+  }
+  .navMenuItems{
+    padding: 5px 0px;
+    color: #BB4F77;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.5%;
+    text-decoration: none;
+    display: flex;
+    width: 250px;
+  }
+  .navABTN{
+    display: flex;
+    border-radius: 30px;
+    background: #BB4F77;
+    width: 250px;
+    height: 40px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 109.9%; /* 26.376px */
+    border: none;
+    margin-top: 5px;
+  }
+  .rightIMG{
+    width: 25px;
+    height: 25px;
+  }
+  .navABTN:hover{
+    background: #943E5E;
+  }
+  .navmenuIcon{
+
+  }
+  @media(max-width: 768px) {
+    .middleNav{
+      flex-direction: column;
+      margin: 0 auto;
+      /* height: 40%;
+      width: 100%; */
+      
+    }
+    .navABTN{
+      display: none;
+    }
+    .menu {
+      position: absolute;
+      top: 70px; 
+      left: 0; 
+      width: 100%; 
+      background-color: rgba(255, 245, 244, 1); 
+      /* border-top: 1px solid #ddd;  */
+      z-index: 1000; 
+      transition: 0.5s;
+  }
+  .navBTN{
+    
+  }
+  }
+
