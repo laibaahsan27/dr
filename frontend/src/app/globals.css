@@ -6,15 +6,10 @@
 .heroCON{
   position: relative;
   background-image: url(../images/newhero.svg);
-  /* width: 1445px; */
   height: 500px;
   margin-left: 45px; 
   margin-right: 45px;
   border-radius: 30px;
-  /* display: flex;
-  justify-content: center; */
-  /* margin-right: 45px;
-  /* margin-left: 45px; */
 }
 .bgImg{
   position: relative;
@@ -33,7 +28,6 @@
   box-sizing: content-box;
   max-width: 596px;
   padding: 40px 40px 0 40px;
-  /* margin: 0 auto; */
 }
 .App{
   display: inline-block;
@@ -45,11 +39,9 @@ h1 {
   font-size: 50px;
   font-weight: 400;
   line-height: 0.9;
-  /* margin: 0 0 20px; */
 }
 
 h2 {
-  /* font-family: 'Caveat'; */
   font-family: 'Nunito Sans';
   font-size: 50px;
   font-weight: 400;
@@ -91,7 +83,7 @@ width: 500px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 109.9%; /* 26.376px */
+  line-height: 109.9%; 
   border: none;
 }
 .rightIMG{
@@ -115,7 +107,7 @@ width: 500px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 109.9%; /* 26.376px */
+  line-height: 109.9%; 
   border-radius: 30px;
   border: 2px solid #BB4F77;
   background-color: rgba(247, 222, 228, 1);
@@ -128,7 +120,6 @@ width: 500px;
 .outerLIST{
   display: inline-block;
   width: 120px;
-  /* flex-direction: row; */
 }
 .setLIST{
   display: flex;
@@ -144,7 +135,7 @@ width: 500px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100.9%; /* 24.216px */
+  line-height: 100.9%; 
 }
 .listDOWN{
   padding-top: 5px;
@@ -154,7 +145,7 @@ width: 500px;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 117%; /* 18.72px */
+  line-height: 117%; 
   width: 100px;
 
 }
@@ -168,7 +159,7 @@ width: 500px;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100.9%; /* 48.432px */
+  line-height: 100.9%;
   width: 270px;
 }
 .heroSpan{
@@ -188,7 +179,7 @@ width: 500px;
   font-size: 30px;
   font-style: normal;
   font-weight: 800;
-  line-height: 115.9%; /* 46.36px */
+  line-height: 115.9%; 
   text-transform: uppercase;
 }
 .aboutTxt{
@@ -198,7 +189,6 @@ width: 500px;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 119.9%; /* 38.368px */
   letter-spacing: 1.28px;
 }
 .aboutTxtSpan{
@@ -206,7 +196,6 @@ width: 500px;
 }
 
 .aboutLinkL{
-  /* padding-bottom: 100px; */
   text-decoration: none;
   padding-top: 15px;
   display: flex;
@@ -215,10 +204,9 @@ width: 500px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 109.9%; /* 26.376px */
+  line-height: 109.9%; 
 }
 .aboutArrow{
-  /* padding-top: 10px; */
   width: 25px;
   height: 25px;
   margin-left: 5px;
@@ -230,8 +218,6 @@ width: 500px;
 .hover-underline-animation {
  display: inline-block;
  position: relative;
- /* text-decoration: none; */
- /* color: #0087ca; */
 }
 
 .hover-underline-animation:after {
@@ -261,9 +247,6 @@ width: 500px;
     width: 344px;
     height: 717px;
     margin: 0px auto;
-    /* margin-left: 23px; 
-    margin-right: 20px;  */
-
   }
   h1{
     font-size: 35px;
@@ -318,15 +301,15 @@ width: 500px;
  
   .docImg{
     margin-top: 738px;
-    left: 14%;
+    left: 8%;
     width: 150px;
   }
   .heroRightTxt{
-    top: 930px;
+    top: 860px;
     color: #BB4F77;
     font-size: 20px;
     width: 158px;
-    right: 55px;
+    right: 45px;
   }
   .heroSpan {
     color: #C36386;
@@ -539,7 +522,7 @@ width: 500px;
   margin-left: 15px;
   margin-top: 15px;
 }
-@media(max-width: 1286px){
+@media(max-width: 1286px) and (min-width: 767px){
   .heroRightTxt {
     right: 100px;
   }

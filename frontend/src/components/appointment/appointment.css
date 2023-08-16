@@ -67,7 +67,7 @@
     .bookATxt{
       text-shadow: none;
       font-size: 30px;
-      padding-left: 0px;
+      padding: 0px 5px 0 5px;
       text-align: center;
     }
     .bookASpan{
