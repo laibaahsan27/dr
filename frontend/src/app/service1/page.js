@@ -1,5 +1,6 @@
-import React from 'react'
+import Image from "next/image";
 import './css.css'
+import ONE from '../../images/service1img.svg'
 
 export default function page() {
 const list=[
@@ -20,6 +21,8 @@ const list=[
             </div>
           );
         })}
+
+      <Image className="service1IMG" src={ONE} alt="" />
     </div>
   )
 }

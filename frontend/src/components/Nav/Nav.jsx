@@ -85,10 +85,10 @@ export default function Nav() {
       heading: "Anti-ageing Procedures",
       sub: "Non surgical face - lift , Liquid Lift , Mesobotox , Microneedling , Radiofrequency , Hifu , Ultherapy , Aqua Gold , Exillis , PRP with microneedling",
     },
-    // {
-    //   id: 2,
-    //   heading: "Chemical Peel Treatment",
-    // },
+    {
+      id: 2,
+      heading: "Chemical Peel Treatment",
+    },
     {
       id: 3,
       heading: "Skin Concerns",

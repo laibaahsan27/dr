@@ -454,37 +454,173 @@ width: 500px;
     margin-top: 13px;
   }
 }
-/* .cardHead{
+
+.bookA{
+  border-radius: 30px;
+  background: #F7DEE4;
   display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  gap: 0px;
+  justify-content: space-around;
+  margin: 150px 150px 250px 150px;
+  height: 300px;
 }
-
-.cardsCON{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 130px;
-   row-gap: 50px;
-   justify-content: center;
-   margin: 0px auto;
+.bookForm{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  border-radius: 16px;
+  background: #FFF;
+  top: 30px;
+  height: 395px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
-.outerLIST3{
-  border: 1px solid rgba(156, 0, 60, 1);
-  padding: 30px 20px 17px 20px;
-}
-
-.cardsTxt{
+.bookInput{
   color: #BB4F77;
   font-family: 'Poppins';
-  font-size: 25px;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 115.9%; 
-  width: 180px;
+  font-weight: 400;
+  line-height: 115.9%; /* 23.18px */
+  border-radius: 6px;
+  border: none;
+  background: #F7DEE4;
+  padding: 15px 150px 15px 20px;
 }
-.cardsImg{
-  width: 280px;
-  height: 150px;
-  margin-top: 20px;
-} */
+::placeholder{
+  color: #BB4F77;
+}
+.bookBtn2{
+  color: #FFF;
+  font-family: 'Nunito Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109.9%; /* 26.376px */
+  border-radius: 5px;
+  background: #BB4F77;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+.bookAdiv2{
+  position: relative;
+  top: 30px;
+}
+.bookATxt{
+  color: #BB4F77;
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  font-family: 'Nunito Sans';
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 115.9%; /* 46.36px */
+  text-transform: uppercase;
+  padding-left: 40px;
+  
+}
+.bookASpan{
+  color: #BB4F77;
+  text-shadow: none;
+  text-align: center;
+  font-family: 'Nunito Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.9%; /* 28.056px */
+  width: 530px;
+  padding-top: 10px;
+}
+.bookAclinic{
+  width: 500px;
+  height: 330px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+@media(max-width: 1286px){
+  .heroRightTxt {
+    right: 100px;
+  }
+  .bookA{
+    margin: 150px 100px 200px 100px;
+  }
+  .bookInput{
+    padding: 12px 100px 12px 20px;
+  }
+  .bookForm{
+    padding: 20px 30px;
+    top: 30px;
+    height: 370px;
+  }
+  .bookATxt{
+    padding-left: 0px;
+  }
+  .bookASpan{
+    font-size: 17px;
+    width: 435px;
+    padding-top: 10px;
+    margin: 0;
+  }
+  .bookAclinic{
+    width: 450px;
+    height: 300px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+}
+@media(max-width: 768px){
+  .bookA{
+    background: #F7DEE4;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+    margin: 60px 0 320px 0;
+    height: 400px;
+    border-radius: 8% 8% 15% 15%;
+  }
+  .bookForm{
+    gap: 20px;
+    padding: 35px 20px;
+    margin: 0 35px;
+    top: 160px;
+    height: 395px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  }
+  .bookInput{
+    color: #BB4F77;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.9%; /* 23.18px */
+    border-radius: 6px;
+    border: none;
+    background: #F7DEE4;
+    padding: 15px 15px 15px 15px;
+  }
+  .bookBtn2{
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+  .bookAdiv2{
+    top: 150px;
+  }
+  .bookATxt{
+    text-shadow: none;
+    font-size: 30px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .bookASpan{
+    font-size: 20px;
+    width: auto;
+    padding: 20px 30px;
+    text-align: center;
+
+  }
+  .bookAclinic{
+    display: none;
+  }
+}
