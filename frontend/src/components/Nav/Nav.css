@@ -289,9 +289,7 @@
 
 @media(max-width: 1286px){
   .mega-box {
-    border-radius: 25px;
-    background: #f7dee4;
-    position: absolute;
+    width: 1050px;
   }
   .mega-box.active {
     display: block;
