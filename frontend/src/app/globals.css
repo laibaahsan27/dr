@@ -4,6 +4,7 @@
   padding: 0;
 }
 .heroCON{
+  position: relative;
   background-image: url(../images/newhero.svg);
   /* width: 1445px; */
   height: 500px;

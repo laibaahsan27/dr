@@ -1,261 +1,334 @@
-
 .body {
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 .navbar {
-    /* padding: 0px 20px; */
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    background-color: rgba(255, 245, 244, 1);
-    /* color: white; */
-    padding: 20px 40px;
+  /* padding: 0px 20px; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: rgba(255, 245, 244, 1);
+  /* color: white; */
+  padding: 20px 40px;
 }
 
 .containerLogo {
-    width: 45px;
-    height: 45px;
-    border-radius: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.logoName {
+  /* padding: 0px 20px; */
+  display: flex;
+  color: #bb4f77;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+}
+.logoName:hover {
+  color: #bb4f77;
+}
+.logoImg {
+  margin-right: 10px;
+  object-fit: contain;
+  width: 45px;
+  height: 45px;
+}
+.logoNAME {
+  text-align: center;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .containerLogo {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+  }
+  .logoImg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logoName {
+    font-size: 16px;
+  }
+  .logoNAME {
+    margin-top: 0px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .burger {
     display: flex;
-}
+  }
 
-.logoName{
-    /* padding: 0px 20px; */
+  .navbar-button,
+  .navbar-logo,
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links.active {
     display: flex;
-    color: #BB4F77;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-}
-.logoName:hover{
-    color: #BB4F77;
-}
-.logoImg{
-    margin-right: 10px;
-    object-fit: contain;
-    width: 45px;
-    height: 45px;
-}
-.logoNAME{
-    text-align: center;
-    margin-top: 8px;
-    margin-left: 8px;
+  }
 }
 
-@media(max-width: 768px) {
-    .containerLogo {
-        width: 24px;
-        height: 24px;
-        margin-top: 0;
-    }
-    .logoImg{
-        width: 24px;
-        height: 24px;
-    }
-    
-    .logoName{
-        font-size: 16px;
-    }
-    .logoNAME{
-        margin-top: 0px;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .navbar-button, .navbar-logo, .navbar-links {
-        display: none;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-/* Example CSS for a responsive menu */
 .menubar__button {
-    display: none;
-  }
-  
-  .menu {
-    display: flex;
-  }
-  
-  .submenu {
-    display: none;
-  }
-  
-  .menu.active {
-    display: block;
-  }
-  
-  .submenu.active {
-    display: block;
-  }
-  
-  /* Display responsive button below 768px */
-  @media (max-width: 767px) {
-    .menubar__button {
-      display: block;
-    }
-  
-    .menu {
-      display: none;
-    }
-  
-    .menu.active {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  .menu {
-    position: relative; /* Step 1: Relative position for the parent */
+  display: none;
 }
-.subMenuParent{
+
+.menu {
+  display: flex;
+}
+
+.submenu {
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+.submenu.active {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .menubar__button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.menu {
+  position: relative; 
+}
+.subMenuParent {
   position: relative;
 }
 
-  .middleNav{
-    display: flex;
-    gap: 0px;
-    margin: 5px 0 0 0;
-    padding: 0;
-    /* position: relative; */
+.middleNav {
+  display: flex;
+  gap: 0px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  /* position: relative; */
+}
+.liNav {
+  list-style-type: none;
+  text-decoration: none;
+}
+.navBTN {
+  color: #c36386;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 10px;
+}
+.hover-effect .navBTN {
+  background-color: rgba(252, 230, 238, 1);
+}
+.navBTNS:hover {
+  background-color: rgba(252, 230, 238, 1);
+}
 
+.navMenuHead {
+  color: #bb4f77;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 117.5%;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 200px;
+}
+.navMenuItems {
+  padding: 5px 0px;
+  color: #bb4f77;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 117.5%;
+  text-decoration: none;
+  display: flex;
+  width: 250px;
+}
+.navABTN {
+  display: flex;
+  border-radius: 30px;
+  background: #bb4f77;
+  width: 250px;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109.9%; /* 26.376px */
+  border: none;
+  margin-top: 5px;
+}
+.rightIMG {
+  width: 25px;
+  height: 25px;
+}
+.navABTN:hover {
+  background: #943e5e;
+}
+@media (max-width: 768px) {
+  .middleNav {
+    flex-direction: column;
+    margin: 0 auto;
+    /* height: 40%;
+      width: 100%; */
   }
-  .liNav{
-    list-style-type: none;
-    text-decoration: none;
+  .navABTN {
+    display: none;
   }
-  .navBTN{
-    color: #C36386;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-    border-radius: 9px;
-    padding: 10px;
-  }
-  .navBTN:hover{
-    background-color: rgba(252, 230, 238, 1);
-  }
-  .submenu{
-    border-radius: 25px;
-    background: #F7DEE4;
-    padding: 40px;
+  .menu {
     position: absolute;
-    top: 100%;        
-    left: 0; 
-    /* transform: translateX(-50%);  */
-    /* right: 0; */
-    z-index: 10;  
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px; 
-    grid-auto-flow: column; */
-   
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 245, 244, 1);
+    /* border-top: 1px solid #ddd;  */
+    z-index: 1000;
+    transition: 0.5s;
   }
-  .subMenuDiv{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px; */
+}
+.mega-box {
+  border-radius: 25px;
+  background: #f7dee4;
+  position: absolute;
+  top: 85px;
+  left: 130px;
+  z-index: 100;
+  padding: 30px;
+  display: none;
+}
+.mega-box.active {
+  display: block;
+}
+.navarrow {
+  position: absolute;
+  top: -20px;
+  left: 600px;
+}
+.row {
+  display: flex;
+  gap: 30px;
+}
+.submenuhead {
+  display: flex;
+  color: #bb4f77;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 117.5%;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 200px;
+  margin: 15px 0;
+}
+.submenuitem {
+  padding: 5px 0px;
+  color: #bb4f77;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 117.5%;
+  text-decoration: none;
+  display: flex;
+  width: 225px;
+}
+
+@media(max-width: 1286px){
+  .mega-box {
+    border-radius: 25px;
+    background: #f7dee4;
+    position: absolute;
+    top: 85px;
+    left: 45px;
   }
-  .subMenuItemsCon{
+  .mega-box.active {
     display: block;
   }
-  .liSubMenu{
-    display: flex;
-    flex-wrap: nowrap;
+  .navarrow {
+    left: 515px;
   }
-  .navMenuHead{
-    color: #BB4F77;
-    font-family: 'Nunito Sans';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 117.5%;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 200px;
-
+  .row {
+    gap: 10px;
   }
-  .navMenuItems{
-    padding: 5px 0px;
-    color: #BB4F77;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 117.5%;
-    text-decoration: none;
-    display: flex;
-    width: 250px;
+  .submenuitem {
+    width: 190px;
   }
-  .navABTN{
+}
+@media(max-width: 768px){
+  .liNav{
+    text-align: center;
+    margin: 5px 0;
+  }
+  .mega-box {
+    top: 152px;
+    left: 0px;
+    width: 92.2%;
+    z-index: 100;
+    padding: 16px;
+    /* display: block; */
+    z-index: 10000;
+  }
+  .mega-box.active {
+    display: block;
+  }
+  .navarrow {
+    display: none;
+  }
+  .row {
     display: flex;
-    border-radius: 30px;
-    background: #BB4F77;
-    width: 250px;
-    height: 40px;
-    padding: 8px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .submenuhead {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 8px;
-    color: #FFF;
-    font-family: 'Nunito Sans';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 109.9%; /* 26.376px */
-    border: none;
-    margin-top: 5px;
+    font-size: 18px;
+    width: auto;
+    margin: 10px 0;
   }
-  .rightIMG{
-    width: 25px;
-    height: 25px;
+  .submenuitem {
+    display: none;
   }
-  .navABTN:hover{
-    background: #943E5E;
-  }
-  .navmenuIcon{
-
-  }
-  @media(max-width: 768px) {
-    .middleNav{
-      flex-direction: column;
-      margin: 0 auto;
-      /* height: 40%;
-      width: 100%; */
-      
-    }
-    .navABTN{
-      display: none;
-    }
-    .menu {
-      position: absolute;
-      top: 70px; 
-      left: 0; 
-      width: 100%; 
-      background-color: rgba(255, 245, 244, 1); 
-      /* border-top: 1px solid #ddd;  */
-      z-index: 1000; 
-      transition: 0.5s;
-  }
-  .navBTN{
-    
-  }
-  }
-
+}
