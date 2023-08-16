@@ -1,0 +1,68 @@
+.contactNow{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 415px;
+    background-color: #C36386;
+    padding-bottom: 30px;
+}
+.contactNowInner{
+    margin: auto 20px;
+}
+.serviceFormInner{
+    display: flex;
+    flex-direction: column;
+}
+.contactHeading{
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 27.82px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.serviceFormInner{
+    gap: 20px;
+}
+.SFinput{
+    border: none;
+    border-bottom: 1px solid #F7DEE4;
+    background-color: #C36386;
+    padding-bottom: 15px;
+}
+.SFinput::placeholder{
+    color: #F7DEE4;
+}
+.SFbutton{
+    border-radius: 7px;
+    border: none;
+    padding: 2%;
+    height: 40px;
+    background-color: #F7DEE4;
+    color: #C36386;
+}
+.SFconsultation{
+    margin-top: -10px;
+    text-decoration: none;
+    color: #F7DEE4;
+    font-family: 'Numito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.serviceCardContact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.SCC{
+    color: #F7DEE4A6;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
