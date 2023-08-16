@@ -1,7 +1,7 @@
 import React from "react";
 import "./serviceCard.css";
 import Image from "next/image";
-import phone from "../../images/phone.svg";
+import phone from "../../images/Phone.svg";
 import mail from "../../images/mail.svg";
 
 const ServiceCard = () => {
