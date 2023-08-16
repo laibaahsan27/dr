@@ -1,9 +1,14 @@
+
+
+
+
 .body {
   overflow: hidden;
   padding: 0;
   margin: 0;
 }
 .navbar {
+  position: relative;
   /* padding: 0px 20px; */
   display: flex;
   justify-content: space-between;
@@ -11,6 +16,7 @@
   background-color: rgba(255, 245, 244, 1);
   /* color: white; */
   padding: 20px 40px;
+  z-index: 1001;
 }
 
 .containerLogo {
@@ -232,7 +238,11 @@
   background: #f7dee4;
   position: absolute;
   top: 85px;
-  left: 130px;
+  width: 1210px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* left: 130px; */
   z-index: 100;
   padding: 30px;
   display: none;
@@ -243,7 +253,9 @@
 .navarrow {
   position: absolute;
   top: -20px;
-  left: 600px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .row {
   display: flex;
@@ -280,14 +292,9 @@
     border-radius: 25px;
     background: #f7dee4;
     position: absolute;
-    top: 85px;
-    left: 45px;
   }
   .mega-box.active {
     display: block;
-  }
-  .navarrow {
-    left: 515px;
   }
   .row {
     gap: 10px;
@@ -302,8 +309,6 @@
     margin: 5px 0;
   }
   .mega-box {
-    top: 152px;
-    left: 0px;
     width: 92.2%;
     z-index: 100;
     padding: 16px;

@@ -2,7 +2,6 @@
 import "./Nav.css";
 import React, { useState } from "react";
 import Image from "next/image";
-// import { useRouter } from 'next/router';
 import { motion } from "framer-motion";
 import LOGO from "../../images/logoSVG.svg";
 import RIGHT from "../../images/CaretRight.svg";
@@ -10,46 +9,6 @@ import menu from "../../images/hamburger.svg";
 import tri from "../../images/Rectangle.svg";
 
 export default function Nav() {
-  // const list = [
-  //   {
-  //     id: 1,
-  //     heading: "Anti-ageing Procedures",
-  //     sub: "Non surgical face - lift , Liquid Lift , Mesobotox , Microneedling , Radiofrequency , Hifu , Ultherapy , Aqua Gold , Exillis , PRP with microneedling",
-  //     heading2: "Chemical Peel Treatment",
-  //   },
-  // {
-  //   id: 2,
-  //   heading: "Chemical Peel Treatment",
-  // },
-  // {
-  //   id: 2,
-  //   heading: "Skin Concerns",
-  //   sub: "Acne Treatment , Rosacea , Sun and age spots , Under eye dark circles , Brown Spots , Freckles Treatments",
-  //   heading2: "makeover",
-  //   sub2: "Bride and groom- semipermanent makeup , Microblading, Lip coloring",
-  // },
-  // {
-  //   id: 4,
-  //   heading: "makeover",
-  //   sub: "Bride and groom- semipermanent makeup , Microblading, Lip coloring",
-  // },
-  //   {
-  //     id: 3,
-  //     heading: "Skin Maintenance",
-  //     sub: "Aquaoxy facial, Meso glow, Semi permanent make up , PRP for face, Body polishing , Hydrafacial , Oxygeneo facial , Power glow facial , Photofacial",
-  //   },
-  //   {
-  //     id: 4,
-  //     heading: "Skin Concerns",
-  //     sub: "Tummy tightening , Double chin removal , Body polishing , Underarms darkness , Excessive sweating , Laser hair reduction, Stretch marks removal, Tattoo removal",
-  //   },
-  //   {
-  //     id: 5,
-  //     heading: "hair treatments",
-  //     sub: "PRP Treatments , Mesotherapy, Hair transplant",
-  //   },
-  // ];
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -62,11 +21,8 @@ export default function Nav() {
 
     setIsMenuOpen(!isMenuOpen);
     setIsSubMenuOpen(false); // Close sub-menu when main menu toggles
-  };
-
-  const toggleSubMenu = () => {
-    setIsSubMenuOpen(!isSubMenuOpen);
-  };
+    setShowMegaBox(false); // Close the mega box
+};
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -95,7 +51,7 @@ export default function Nav() {
           <div className="contentN">
             <div className="row">
               <div>
-                <a className="submenuhead" href="">
+                <a className="submenuhead" href="service1">
                   Anti-ageing Procedures
                 </a>
                 <span className="submenuitem">Non surgical face - lift</span>
@@ -108,12 +64,12 @@ export default function Nav() {
                 <span className="submenuitem">Aqua Gold</span>
                 <span className="submenuitem">Exillis</span>
                 <span className="submenuitem">PRP with microneedling</span>
-                <a className="submenuhead" href="">
+                <a className="submenuhead" href="service2">
                   Chemical Peel Treatment
                 </a>
               </div>
               <div>
-                <a className="submenuhead" href="">
+                <a className="submenuhead" href="service3">
                   Skin Concerns
                 </a>
                 <span className="submenuitem">Acne Treatment</span>
@@ -122,7 +78,7 @@ export default function Nav() {
                 <span className="submenuitem">Under eye dark circles</span>
                 <span className="submenuitem">Brown Spots</span>
                 <span className="submenuitem">Freckles Treatments</span>
-                <a className="submenuhead" href="">
+                <a className="submenuhead" href="service4">
                   makeover
                 </a>
                 <span className="submenuitem">
@@ -132,7 +88,7 @@ export default function Nav() {
                 <span className="submenuitem">Lip coloring</span>
               </div>
               <div>
-                <a className="submenuhead" href="">
+                <a className="submenuhead" href="service5">
                   Skin Maintenance
                 </a>
                 <span className="submenuitem">Aquaoxy facial</span>
@@ -147,7 +103,7 @@ export default function Nav() {
                 <span className="submenuitem">Photofacial</span>
               </div>
               <div>
-                <a className="submenuhead" href="">
+                <a className="submenuhead" href="service6">
                   Skin Concerns
                 </a>
                 <span className="submenuitem">Tummy tightening</span>
@@ -160,7 +116,7 @@ export default function Nav() {
                 <span className="submenuitem">Tattoo removal</span>
               </div>
               <div>
-                <a className="submenuhead" href="">
+                <a className="submenuhead" href="service7">
                   hair treatments
                 </a>
                 <span className="submenuitem">PRP Treatments</span>
@@ -176,17 +132,12 @@ export default function Nav() {
             <li className="liNav" onClick={closeMenu}>
               <a
                 className="navBTN navBTNS"
-                onMouseEnter={() => setShowMegaBox(false)} // Close mega-box when hovering over About
+                onMouseEnter={() => setShowMegaBox(false)}
                 href="/about"
               >
                 About
               </a>
             </li>
-            {/* <li className="liNav" onClick={closeMenu}>
-              <a className="navBTN navBTNS" href="/about">
-                About
-              </a>
-            </li> */}
             <li
               className={`liNav subMenuParent ${
                 showMegaBox ? "hover-effect" : ""
@@ -201,56 +152,20 @@ export default function Nav() {
                 Services
               </a>
             </li>
-
-            {/* <ul className={`submenu ${isSubMenuOpen ? "active" : ""}`}>
-                {list.map((item) => {
-                  const subItems = item.sub ? item.sub.split(", ") : [];
-                  return (
-                    <React.Fragment key={item.id}>
-                      <div className="subMenuDiv">
-                        <li className="liNav liSubMenu" onClick={closeMenu}>
-                          <a className="navMenuHead" href="#">
-                            {item.heading}
-                          </a>
-                        </li>
-                        {subItems.map((subItem, index) => (
-                          <div className="subMenuItemsCon">
-                            <li
-                              className="liNav"
-                              key={index}
-                              onClick={closeMenu}
-                            >
-                              <a className="navMenuItems" href="#">
-                                {subItem.trim()}
-                              </a>
-                            </li>
-                          </div>
-                        ))}
-                      </div>
-                    </React.Fragment>
-                  );
-                })}
-              </ul> */}
-            {/* </li> */}
             <li className="liNav" onClick={closeMenu}>
               <a
                 className="navBTN navBTNS"
-                onMouseEnter={() => setShowMegaBox(false)} // Close mega-box when hovering over Contact
+                onMouseEnter={() => setShowMegaBox(false)}
                 href="/contact"
               >
                 Contact
               </a>
             </li>
-            {/* <li className="liNav" onClick={closeMenu}>
-              <a className="navBTN navBTNS" href="/contact">
-                Contact
-              </a>
-            </li> */}
           </ul>
         </div>
         <span className="menubar__button" onClick={toggleMenu}>
-          <Image className="navmenuIcon" src={menu} alt="Logo" />
-        </span>
+    <Image className="navmenuIcon" src={menu} alt="Logo" />
+</span>
         <button className="navABTN">
           Book an appointment <Image className="rightIMG" src={RIGHT} alt="" />
         </button>
