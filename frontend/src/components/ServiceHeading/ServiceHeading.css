@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap');
+
+/* top heading card */
+.outerS{
+    border-radius: 16px;
+    background: #BB4F77;
+    padding: 30px;
+    margin: 20px 50px;
+}
+.topHead{
+    color: #FBE8EF;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 93.9%; /* 22.536px */
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.topTxt{
+    color: #FBE8EF;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112.4%; /* 22.48px */
+}
+
+@media (max-width: 768px) {
+    .outerS{
+        margin: 20px 23px;
+    }
+    .topTxt{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .topHead{
+        font-size: 20px;
+        line-height: 19px;
+        text-align: center;
+    }
+}
