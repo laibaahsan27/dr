@@ -14,14 +14,14 @@
     height: 30%;
 }
 .servicePagesCard{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: fit-content;
     width: fit-content;
     position: sticky;
     top: 0px;
     right: 0;
-    margin-left: auto;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     justify-content: center;
 }
 

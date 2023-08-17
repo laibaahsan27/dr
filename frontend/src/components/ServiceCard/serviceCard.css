@@ -26,12 +26,12 @@
 .serviceFormInner{
     gap: 20px;
 }
-.SFinput{
+/* .SFinput{
     border: none;
     border-bottom: 1px solid #F7DEE4;
     background-color: #C36386;
     padding-bottom: 15px;
-}
+} */
 .SFinput::placeholder{
     color: #F7DEE4;
 }
@@ -53,22 +53,6 @@
     font-family: 'Numito Sans', sans-serif;
     font-weight: 100;
     font-size: 13px;
-}
-.serviceCardContact{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-}
-.SCC{
-    color: #F7DEE4A6;
-    gap: 5px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
 }
 .contactLoc{
     margin-top: 20px;

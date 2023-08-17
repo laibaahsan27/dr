@@ -1,10 +1,22 @@
 import React from "react";
 import "./serviceCard.css";
+import TextField from '@mui/material/TextField';
 import Image from "next/image";
 import phone from "../../images/Phone.svg";
 import mail from "../../images/mail.svg";
 
+
 const ServiceCard = () => {
+  const styles = ({
+    SFinput: {
+        border: 'none',
+        // borderBottom: '1px solid #F7DEE4',
+        backgroundColor: '#C36386',
+        paddingBottom: '15px',
+        color: '#F7DEE4',
+    },
+  });
+
   return (
     <>
       <div className="contactNow">
@@ -13,18 +25,10 @@ const ServiceCard = () => {
 
           <div className="serviceForm">
             <form className="serviceFormInner" action="">
-              <input className="SFinput" type="text" placeholder="Full Name" />
-              <input
-                className="SFinput"
-                type="text"
-                placeholder="Phone Number"
-              />
-              <input className="SFinput" type="text" placeholder="Email" />
-              <input
-                className="SFinput"
-                type="text"
-                placeholder="Book Service"
-              />
+             <TextField className='SFinput'  sx={styles.SFinput} id="standard-basic"  placeholder="Full Name" label="Full Name" variant="standard" />
+              <TextField className='SFinput' sx={styles.SFinput} id="standard-basic"  placeholder="Phone Number" label="Phone Number" variant="standard" />
+              <TextField className='SFinput' sx={styles.SFinput} id="standard-basic"  placeholder="Email" label="Email" variant="standard" />
+              <TextField className='SFinput' sx={styles.SFinput}id="standard-basic"  placeholder="Book Service" label="Book Service" variant="standard" />
               <button className="SFbutton" type="submit">
                 Book an Appointment
               </button>
@@ -50,16 +54,6 @@ const ServiceCard = () => {
             </div>
           </div>
 
-          <div className="serviceCardContact">
-            <div className="SCC">
-              <Image src={phone} />
-              <span>+91 9990363087</span>
-            </div>
-            <div className="SCC">
-              <Image src={mail} />
-              <span>email@gmail.com</span>
-            </div>
-          </div>
         </div>
       </div>
     </>
