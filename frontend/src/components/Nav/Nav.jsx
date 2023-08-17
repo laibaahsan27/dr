@@ -11,6 +11,8 @@ import tri from "../../images/Rectangle.svg";
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const [showMegaBox, setShowMegaBox] = useState(false);
+  const [showResponsiveMenu, setShowResponsiveMenu] = useState(false);
 
   const toggleMenu = () => {
     if (!isMenuOpen) {
@@ -22,13 +24,18 @@ export default function Nav() {
     setIsMenuOpen(!isMenuOpen);
     setIsSubMenuOpen(false); // Close sub-menu when main menu toggles
     setShowMegaBox(false); // Close the mega box
-};
+  };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
     setIsSubMenuOpen(false);
   };
-  const [showMegaBox, setShowMegaBox] = useState(false);
+  const toggleResponsiveMenu = () => {
+    setShowResponsiveMenu(prevState => !prevState);
+  };
+  const closeResponsiveMenu = () => {
+    setShowResponsiveMenu(false);
+  };
 
   return (
     <div>
@@ -144,13 +151,52 @@ export default function Nav() {
               }`}
             >
               <a
-                className="navBTN"
+                className="navBTN navBTNSS"
                 onMouseEnter={() => setShowMegaBox(true)}
                 onClick={() => setShowMegaBox(!showMegaBox)}
                 href="#"
               >
                 Services
               </a>
+              <a
+                className="navBTNPhone"
+                onClick={toggleResponsiveMenu}
+                href="#"
+              >
+                Services
+              </a>
+              <ul className={`responsiveMENUCON ${showResponsiveMenu ? 'active' : ''}`}>
+                <li>
+                  <a className="responsiveMEnu" href="service1">
+                    Anti-ageing Procedures
+                  </a>
+                </li>
+                <li>
+                  <a className="responsiveMEnu" href="service2">
+                    Chemical Peel Treatment
+                  </a>
+                </li>
+                <li>
+                  <a className="responsiveMEnu" href="service3">
+                    Skin Concerns
+                  </a>
+                </li>
+                <li>
+                  <a className="responsiveMEnu" href="service4">
+                    makeover
+                  </a>
+                </li>
+                <li>
+                  <a className="responsiveMEnu" href="service5">
+                    Skin Maintenance
+                  </a>
+                </li>
+                <li>
+                  <a className="responsiveMEnu" href="service7">
+                    hair treatments
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="liNav" onClick={closeMenu}>
               <a
@@ -163,9 +209,9 @@ export default function Nav() {
             </li>
           </ul>
         </div>
-        <span className="menubar__button" onClick={toggleMenu}>
-    <Image className="navmenuIcon" src={menu} alt="Logo" />
-</span>
+        <span className="menubar__button" onClick={() => { toggleMenu(); closeResponsiveMenu(); }}>
+          <Image className="navmenuIcon" src={menu} alt="Logo" />
+        </span>
         <button className="navABTN">
           Book an appointment <Image className="rightIMG" src={RIGHT} alt="" />
         </button>

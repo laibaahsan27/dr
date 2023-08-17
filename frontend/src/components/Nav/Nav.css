@@ -1,6 +1,8 @@
 
 
-
+.responsiveMENUCON{
+  display: none;
+}
 
 .body {
   overflow: hidden;
@@ -55,39 +57,26 @@
 }
 
 @media (max-width: 768px) {
+  .navbar{     
+    padding: 20px 25px;   
+  }
   .containerLogo {
     width: 24px;
     height: 24px;
     margin-top: 0;
   }
   .logoImg {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
+    margin-top: 2px;
   }
 
   .logoName {
-    font-size: 16px;
+    padding-top: 4px;
+    font-size: 18px;
   }
   .logoNAME {
     margin-top: 0px;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-  }
-
-  .burger {
-    display: flex;
-  }
-
-  .navbar-button,
-  .navbar-logo,
-  .navbar-links {
-    display: none;
-  }
-
-  .navbar-links.active {
-    display: flex;
   }
 }
 
@@ -109,23 +98,6 @@
 
 .submenu.active {
   display: block;
-}
-
-@media (max-width: 767px) {
-  .menubar__button {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .menu.active {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
 }
 .menu {
   position: relative; 
@@ -212,13 +184,57 @@
 .navABTN:hover {
   background: #943e5e;
 }
+.responsiveMENUCON {
+  display: none;
+  /* other styles */
+}
+
+.responsiveMENUCON.active {
+  display: block;
+}
+
 @media (max-width: 768px) {
+  .navBTNSS{
+    display: none;
+  }
+  .navBTNPhone{
+    color: #c36386;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 10px;
+  }
+  .hover-effect .navBTNPhone {
+    background-color: rgba(252, 230, 238, 1);
+  }
+  .navBTNPhone:hover{
+    background-color: rgba(252, 230, 238, 1);
+  }
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .menubar__button {
+    display: block;
+  }
+  .liNav{
+    /* text-align: left; */
+    margin: 10px 0;
+  }
   .middleNav {
     flex-direction: column;
-    margin: 0 auto;
-    /* height: 40%;
-      width: 100%; */
-  }
+    padding: 20px 0;
+    margin: 0;
+}
   .navABTN {
     display: none;
   }
@@ -231,6 +247,25 @@
     /* border-top: 1px solid #ddd;  */
     z-index: 1000;
     transition: 0.5s;
+  }
+  .responsiveMENUCON{
+    padding: 0;
+    list-style-type: none;
+    background-color: #c36386;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+  .responsiveMEnu{
+    text-decoration: none;
+      color: rgba(255, 245, 244, 1);
+      font-family: "Poppins";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 10px;
   }
 }
 .mega-box {
