@@ -1,32 +1,13 @@
-import React from 'react'
-import "./ServiceHeading.css"
+import React from 'react';
+import "./ServiceHeading.css";
 
-const ServiceHeading = ({heading , content}) => {
-
-    const list = [
-        {
-          id: 1,
-          heading: `${heading}`,
-          content:
-            `${content}`,
-        },
-      ];
-
-
+const ServiceHeading = ({ heading, content }) => {
   return (
-    <>
-        <div>
-        {list.map((list) => {
-          return (
-            <div className="outerS" id={list.id}>
-              <div className="topHead">{list.heading}</div>
-              <div className="topTxt">{list.content}</div>
-            </div>
-          );
-        })}
-      </div>
-    </>
-  )
+    <div className="outerS" id={1}>
+      <div className="topHead">{heading}</div>
+      <div className="topTxt">{content}</div>
+    </div>
+  );
 }
 
-export default ServiceHeading
+export default ServiceHeading;

@@ -4,6 +4,7 @@ import Image from "next/image";
 import hair from "../../images/Rectangle 49.png";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
+import ServiceText from "@/components/ServiceText/ServiceText";
 
 export default function page() {
   const list = [
@@ -45,18 +46,7 @@ export default function page() {
             <Image className="serviceCoverImage" src={hair} alt="" />
           </div>
 
-          <div className="serviceData">
-            <div className="dataInner">
-              {list2.map((list2) => {
-                return (
-                  <>
-                    <div className="serviceDataHeading">{list2.heading}</div>
-                    <div className="serviceDataContent">{list2.content}</div>
-                  </>
-                );
-              })}
-            </div>
-          </div>
+          <ServiceText list2={list2}/>
         </div>
 
         <div className="servicePagesCard">
