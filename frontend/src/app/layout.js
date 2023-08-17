@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning={true} lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&family=Pacifico&family=Poppins&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Poppins&display=swap" rel="stylesheet"></link>
       </head>
-      <body  className={inter.className} style={{margin:'0', backgroundColor:'#FFF5F4'}}>
+      <body suppressHydrationWarning={true} className={inter.className} style={{margin:'0', backgroundColor:'#FFF5F4'}}>
       <Nav/>
       {children}
       <Foot/>
