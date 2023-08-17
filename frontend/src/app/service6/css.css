@@ -1,30 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap');
 
-.outerS{
-    border-radius: 16px;
-    background: #BB4F77;
-    padding: 30px;
-    margin: 20px 50px;
-}
-.topHead{
-    color: #FBE8EF;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    font-family: 'Nunito Sans';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 93.9%; /* 22.536px */
-    text-transform: capitalize;
-    padding-bottom: 20px;
-}
-.topTxt{
-    color: #FBE8EF;
-    font-family: 'Nunito Sans';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 112.4%; /* 22.48px */
-}
 .serviceCover{
     width: 100%;
     display: flex;
@@ -34,44 +9,16 @@
     width: 100%;
 }
 .serviceCoverImage{
-    margin: 20px 50px;
-    width: 83%;
+    margin: 0px 50px;
+    width: 90%;
     height: 30%;
-}
-
-.serviceData{
-    margin: 20px 50px;
-    width: 83%;
-    height: 30%;
-    font-family: 'Nunito Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.dataInner{
-    gap: 13px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px 0px;
-}
-.serviceDataHeading{
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 34.77px;
-    color: #9C003C;
-}
-.serviceDataContent{
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    color: #9C003C;
 }
 .servicePagesCard{
     margin-top: 20px;
     height: fit-content;
     width: fit-content;
     position: sticky;
-    top: 20px;
+    top: 0px;
     right: 0;
     margin-left: auto;
     margin-right: 50px;
@@ -80,30 +27,15 @@
 
 @media (max-width: 768px) {
     .imageService{
-        margin: auto 10px;
+        /* margin: auto 10px; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .serviceCoverImage{
-        width: 100%;
+        width: 89%;
         height: 100%;
-    }
-    .serviceData{
-        width: 96%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: auto 10px;
-    }
-    .serviceDataHeading{
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .serviceDataContent{
-        font-size: 16px;
-        line-height: 20px;
     }
     .serviceCover{
         flex-direction: column;

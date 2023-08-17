@@ -3,6 +3,8 @@ import "./css.css";
 import Image from "next/image";
 import hair from "../../images/Rectangle 49.png";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
+import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
+import ServiceText from "@/components/ServiceText/ServiceText";
 
 export default function page() {
   const list = [
@@ -37,36 +39,16 @@ export default function page() {
 
   return (
     <>
-      <div>
-        {list.map((list) => {
-          return (
-            <div className="outerS" id={list.id}>
-              <div className="topHead">{list.heading}</div>
-              <div className="topTxt">{list.content}</div>
-            </div>
-          );
-        })}
-      </div>
+      <ServiceHeading heading={list[0].heading} content={list[0].content} />
       <div className="serviceCover">
         <div className="serviceSection1">
           <div className="imageService">
             <Image className="serviceCoverImage" src={hair} alt="" />
           </div>
 
-          <div className="serviceData">
-            <div className="dataInner">
-              {list2.map((list2) => {
-                return (
-                  <>
-                    <div className="serviceDataHeading">{list2.heading}</div>
-                    <div className="serviceDataContent">{list2.content}</div>
-                  </>
-                );
-              })}
-            </div>
-          </div>
+          <ServiceText list2={list2}/>
         </div>
-        
+
         <div className="servicePagesCard">
           <ServiceCard />
         </div>
