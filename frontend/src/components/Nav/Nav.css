@@ -192,6 +192,9 @@
 .responsiveMENUCON.active {
   display: block;
 }
+.navBTNPhone{
+  display: none;
+}
 
 @media (max-width: 768px) {
   .navBTNSS{
