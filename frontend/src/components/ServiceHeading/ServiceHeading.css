@@ -5,7 +5,7 @@
     border-radius: 16px;
     background: #BB4F77;
     padding: 30px;
-    margin: 20px 50px;
+    margin: 20px 40px;
 }
 .topHead{
     color: #FBE8EF;
@@ -29,7 +29,9 @@
 
 @media (max-width: 768px) {
     .outerS{
-        margin: 20px 23px;
+        margin: 0px 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
     .topTxt{
         font-size: 16px;
@@ -39,5 +41,8 @@
         font-size: 20px;
         line-height: 19px;
         text-align: center;
+    }
+    .outerBg{
+        background: #BB4F77;
     }
 }
