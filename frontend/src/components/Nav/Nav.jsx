@@ -71,7 +71,7 @@ export default function Nav() {
                 <span className="submenuitem">Aqua Gold</span>
                 <span className="submenuitem">Exillis</span>
                 <span className="submenuitem">PRP with microneedling</span>
-                <a className="submenuhead" href="service2">
+                <a className="submenuhead" href="service4">
                   Chemical Peel Treatment
                 </a>
               </div>
@@ -85,7 +85,7 @@ export default function Nav() {
                 <span className="submenuitem">Under eye dark circles</span>
                 <span className="submenuitem">Brown Spots</span>
                 <span className="submenuitem">Freckles Treatments</span>
-                <a className="submenuhead" href="service4">
+                <a className="submenuhead" href="service7">
                   makeover
                 </a>
                 <span className="submenuitem">
@@ -110,8 +110,8 @@ export default function Nav() {
                 <span className="submenuitem">Photofacial</span>
               </div>
               <div>
-                <a className="submenuhead" href="service6">
-                  Skin Concerns
+                <a className="submenuhead" href="service2">
+                  Body Treatment
                 </a>
                 <span className="submenuitem">Tummy tightening</span>
                 <span className="submenuitem">Double chin removal</span>
@@ -123,7 +123,7 @@ export default function Nav() {
                 <span className="submenuitem">Tattoo removal</span>
               </div>
               <div>
-                <a className="submenuhead" href="service7">
+                <a className="submenuhead" href="service6">
                   hair treatments
                 </a>
                 <span className="submenuitem">PRP Treatments</span>

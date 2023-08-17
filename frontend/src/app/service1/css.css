@@ -4,13 +4,13 @@
     border-radius: 16px;
     background: #BB4F77;
     padding: 30px;
-    margin: 20px 50px;
+    margin: 20px 40px;
 }
 .topHead{
     color: #FBE8EF;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito Sans';
-    font-size: 24px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: 93.9%; /* 22.536px */
@@ -26,5 +26,7 @@
     line-height: 112.4%; /* 22.48px */
 }
 .service1IMG{
-    margin: 10px 50px;
+    margin: 10px 40px;
+    width: 1439.5px;
+    height: 500px;
 }
