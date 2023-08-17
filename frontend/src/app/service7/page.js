@@ -3,6 +3,7 @@ import "./css.css";
 import Image from "next/image";
 import lip from "../../images/servicepage7.png";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
+import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 
 export default function page() {
   const list = [
@@ -37,16 +38,7 @@ export default function page() {
 
   return (
     <>
-      <div>
-        {list.map((list) => {
-          return (
-            <div className="outerS" id={list.id}>
-              <div className="topHead">{list.heading}</div>
-              <div className="topTxt">{list.content}</div>
-            </div>
-          );
-        })}
-      </div>
+      <ServiceHeading heading={list[0].heading} content={list[0].content} />
       <div className="serviceCover">
         <div className="serviceSection1">
           <div className="imageService">
