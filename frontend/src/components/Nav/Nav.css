@@ -201,6 +201,7 @@
     display: none;
   }
   .navBTNPhone{
+    display: block;
     color: #c36386;
     font-family: "Poppins";
     font-size: 20px;
@@ -276,13 +277,14 @@
   background: #f7dee4;
   position: absolute;
   top: 85px;
-  width: 1210px;
+  /* width: 1210px; */
+  width: 88%;
   left: 0;
   right: 0;
   margin: 0 auto;
   /* left: 130px; */
   z-index: 100;
-  padding: 30px;
+  padding: 30px 50px;
   display: none;
 }
 .mega-box.active {
@@ -297,7 +299,8 @@
 }
 .row {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 40px;
 }
 .submenuhead {
   display: flex;
@@ -318,7 +321,7 @@
   font-family: "Poppins";
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 117.5%;
   text-decoration: none;
   display: flex;

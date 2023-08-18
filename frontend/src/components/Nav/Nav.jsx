@@ -71,9 +71,9 @@ export default function Nav() {
                 <span className="submenuitem">Aqua Gold</span>
                 <span className="submenuitem">Exillis</span>
                 <span className="submenuitem">PRP with microneedling</span>
-                <a className="submenuhead" href="service4">
+                {/* <a className="submenuhead" href="service4">
                   Chemical Peel Treatment
-                </a>
+                </a> */}
               </div>
               <div>
                 <a className="submenuhead" href="service3">
@@ -129,6 +129,9 @@ export default function Nav() {
                 <span className="submenuitem">PRP Treatments</span>
                 <span className="submenuitem">Mesotherapy</span>
                 <span className="submenuitem">Hair transplant</span>
+                <a className="submenuhead" href="service4">
+                  Chemical Peel Treatment
+                </a>
               </div>
             </div>
           </div>

@@ -13,6 +13,7 @@ import HEADDESK from "../images/andAwards.svg";
 import HEADPHONE from "../images/andAwardsPhone.svg";
 import CARDS from "../components/Cards/Cards.jsx";
 import Appointment from "../components/appointment/appointment.jsx";
+import BG from '../images/newhero.svg'
 
 export default function Home() {
   const list = [
@@ -78,8 +79,9 @@ export default function Home() {
   };
 
   return (
-    <div style={{ backgroundColor: "#FFF5F4" }}>
+    <div>
       <div className="heroCON">
+        {/* <Image className="" src={BG} alt="" /> */}
         <div className="heroRightTxt">
           Hi, I’m Dr. Akanksha Agarwal{" "}
           <span className="heroSpan">PGDCC | B.D.S.</span>
