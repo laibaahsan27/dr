@@ -50,7 +50,7 @@ const ServiceCard = () => {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="maps"
+              
               ></iframe>
             </div>
           </div>
