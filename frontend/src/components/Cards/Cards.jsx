@@ -47,7 +47,10 @@ export default function Cards() {
     <div>
       <div>
         <div className="cardHead" ><Image src={cardhead} alt="" />
-        <Image className='cardsheadphone' src={cardheadphone} alt="" /></div>
+        </div>
+        <div className='cardsheadphone'>
+        <Image src={cardheadphone} alt="" />
+        </div>
         <div className="cardsCON" >
           {list3.map((list3) => {
             return (
