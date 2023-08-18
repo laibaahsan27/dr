@@ -102,7 +102,7 @@ export default function page() {
 
           <SvCard list3={list3} />
           
-          <ServiceText list2={list5} />
+          <ServiceText list2={list5} style={true} />
           <ServiceText list2={list2} />
         </div>
 
