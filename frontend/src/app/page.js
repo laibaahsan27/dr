@@ -13,7 +13,8 @@ import HEADDESK from "../images/andAwards.svg";
 import HEADPHONE from "../images/andAwardsPhone.svg";
 import CARDS from "../components/Cards/Cards.jsx";
 import Appointment from "../components/appointment/appointment.jsx";
-import BG from '../images/newhero.svg'
+// import BG from '../images/newhero.svg'
+
 
 export default function Home() {
   const list = [
