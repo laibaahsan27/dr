@@ -472,8 +472,8 @@ h2 {
   .headAwardsPHONE{
     display: block;
     margin: 25px auto;
-    width: 280px;
-    height: 106px;
+    /* width: 280px;
+    height: 106px; */
   }
   .outerLIST2{
     border-radius: 13px;

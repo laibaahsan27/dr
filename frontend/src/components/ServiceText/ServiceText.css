@@ -16,6 +16,7 @@
     margin: 20px 0px;
 }
 .serviceDataHeading{
+    text-transform: uppercase;
     margin-bottom: 8px;
     font-weight: 800;
     font-size: 25px;
