@@ -11,7 +11,7 @@ const ServiceText = (props) => {
           return (
             <div key={item.id}> {/* Add a unique key for each mapped element */}
               <div className="serviceDataHeading">{item.heading}</div>
-              <div className="serviceDataContent">{item.content}</div>
+              <div className="serviceDataContent"><span>{item.bold} </span>{item.content}</div>
             </div>
           );
         })}

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito+Sans:wght@300&display=swap');
 
 .outerS{
     border-radius: 16px;
@@ -7,6 +7,7 @@
     margin: 20px 50px;
 }
 .topHead{
+    padding-top: 5px;
     color: #FBE8EF;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito Sans';
@@ -23,5 +24,66 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 112.4%; /* 22.48px */
+    /* line-height: 112.4%; */
+     /* 22.48px */
+    padding-bottom: 13px;
+}
+.serviceCover{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.serviceSection1{
+    width: 100%;
+}
+.serviceCoverImage{
+    margin: 20px 50px;
+    width: 90%;
+    height: 30%;
+}
+.servicePagesCard{
+    margin-top: 20px;
+    height: fit-content;
+    width: fit-content;
+    position: sticky;
+    top: 20px;
+    right: 0;
+    margin-left: auto;
+    margin-right: 50px;
+    justify-content: center;
+}
+.sv-heading{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    color: #C36386;
+font-family: "Nunito Sans";
+
+font-style: normal;
+font-weight: 700;
+
+text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .imageService{
+        /* margin: auto 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviceCoverImage{
+        width: 100%;
+        height: 100%;
+    }
+    .serviceCover{
+        flex-direction: column;
+    }
+    .servicePagesCard{
+        margin-right: auto;
+    }
+    .sv-heading{
+        margin-left: 23px;
+    }
 }
