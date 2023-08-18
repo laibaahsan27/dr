@@ -32,3 +32,18 @@
     height: 150px;
     margin-top: 20px;
   }
+  .cardsheadphone{
+    display: none;
+  }
+  @media(max-width: 768px){
+    .cardsheadphone{
+      display: block;
+      display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    }
+    .cardHead{
+      display: none;
+    }
+  }

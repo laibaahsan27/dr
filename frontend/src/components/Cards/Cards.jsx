@@ -8,6 +8,7 @@ import img4 from "../../images/card4img.svg";
 import img5 from "../../images/card5img.svg";
 import img6 from "../../images/card6img.svg";
 import cardhead from "../../images/andTreatments.svg"
+import cardheadphone from "../../images/andTreatmentsPhone.svg"
 
 export default function Cards() {
     const list3 = [
@@ -45,7 +46,11 @@ export default function Cards() {
   return (
     <div>
       <div>
-        <div className="cardHead" ><Image src={cardhead} alt="" /></div>
+        <div className="cardHead" ><Image src={cardhead} alt="" />
+        </div>
+        <div className='cardsheadphone'>
+        <Image src={cardheadphone} alt="" />
+        </div>
         <div className="cardsCON" >
           {list3.map((list3) => {
             return (
