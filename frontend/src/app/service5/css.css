@@ -86,4 +86,8 @@ text-transform: uppercase;
     .sv-heading{
         margin-left: 23px;
     }
+    .outerS{
+        margin: 20px 23px;
+        width: 72%;
+    }
 }
