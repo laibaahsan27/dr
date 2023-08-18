@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap');
 
 .serviceData{
-    margin: 20px 50px;
+    margin: 0px 50px;
     width: 90%;
     /* height: 30%; */
     font-family: 'Nunito Sans', sans-serif;
@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 .dataInner{
-    gap: 13px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,13 +18,13 @@
 .serviceDataHeading{
     margin-bottom: 8px;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 25px;
     line-height: 34.77px;
     color: #9C003C;
 }
 .serviceDataContent{
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: #9C003C;
 }
