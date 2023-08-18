@@ -10,10 +10,10 @@ import SvCard from "@/components/SvCard/SvCard";
 import mobile from "../../images/sv5-m.png";
 
 export default function page() {
-  const windowWidth = window.innerWidth;
-  const IMG = windowWidth > 768 ? lip : mobile;
+  // const windowWidth = window.innerWidth;
+  // const IMG = windowWidth > 768 ? lip : mobile;
 
-  const [final, setFinal] = useState(IMG);
+  const [final, setFinal] = useState(lip);
   const list = [
     {
       id: 1,
