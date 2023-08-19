@@ -1,0 +1,18 @@
+.sv4-l{
+    margin-left: 50px;
+    row-gap: 9px;
+    flex-direction: column;
+    display: flex;
+}
+.sv4-l-content{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #9C003C;
+}
+@media(max-width:768px){
+    .sv4-l{
+        margin: 0px 20px;
+        margin-bottom: 55px;
+    }
+}

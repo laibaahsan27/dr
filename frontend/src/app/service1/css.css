@@ -27,6 +27,114 @@
 }
 .service1IMG{
     margin: 10px 40px;
-    width: 1439.5px;
-    height: 500px;
+    width: 94%;
+}
+.servicePagesCard{
+    margin-top: 20px;
+    height: fit-content;
+    width: fit-content;
+    position: sticky;
+    top: 0px;
+    right: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+}
+.serviceCover{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.myhead{
+    margin: 0 50px 8px 50px;
+    color: #D28BA4;
+    font-family: 'Nunito Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34.77px;
+}
+.mycontent{
+    margin: 15px 50px 0 50px;
+    color: #9C003C;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.mycontent2{
+    margin: 15px 50px 0px 50px;
+    color: #9C003C;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.filler{
+    font-weight: 700;
+}
+.whychoose{
+    margin: 0 50px;
+    color: #C36386;
+    font-family: 'Nunito Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.9%; /* 28.975px */
+    text-transform: uppercase;
+}
+.whychooseUL{
+    color: #BB4F77;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: lowercase;
+    margin: 8px;
+}
+@media (max-width: 768px) {
+    .service1IMG{
+        display: none;
+
+    }
+    .serviceData{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto 23px;
+    }
+    .myhead{
+        margin: 0 23px 8px 23px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .mycontent{
+        margin: 0 23px 8px 23px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .mycontent2{
+        margin: 0 23px 8px 23px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .whychoose{
+        margin: 0 23px 8px 23px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .whychooseUL{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .servicePagesCard{
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .serviceCover{
+        flex-direction: column;
+    }
 }
