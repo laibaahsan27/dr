@@ -5,7 +5,7 @@ import lip from "../../images/servicepage7.png";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceText from "@/components/ServiceText/ServiceText";
-
+import Nav from '@/components/Nav/Nav'
 export default function page() {
   const list = [
     {
@@ -39,6 +39,7 @@ export default function page() {
 
   return (
     <>
+      <Nav/>
       <ServiceHeading heading={list[0].heading} content={list[0].content} />
       <div className="serviceCover">
         <div className="serviceSection1">

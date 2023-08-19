@@ -9,6 +9,7 @@ import FIVE from "../../images/servicepage2tattoo.svg"
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceText from "@/components/ServiceText/ServiceText";
+import Nav from '@/components/Nav/Nav'
 
 export default function page() {
   const list = [
@@ -75,6 +76,8 @@ export default function page() {
   ];
 
   return (
+    <>
+    <Nav/>
     <div className="service2CON">
       <ServiceHeading heading={list[0].heading} content={list[0].content} />
       <div className="servicepage2section2">
@@ -136,5 +139,6 @@ export default function page() {
         </div>
       </div>
     </div>
+    </>
   );
 }

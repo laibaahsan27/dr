@@ -4,6 +4,7 @@ import ONE from "../../images/service1img.svg";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
+import Nav from '@/components/Nav/Nav'
 
 export default function page() {
   const list = [
@@ -76,6 +77,8 @@ export default function page() {
   ];
 
   return (
+    <>
+    <Nav/>
     <div className="service1CON">
       <ServiceHeading heading={list[0].heading} content={list[0].content} />
       {/* <div className="service1IMG"> */}
@@ -118,5 +121,6 @@ export default function page() {
         </div>
       </div>
     </div>
+    </>
   );
 }
