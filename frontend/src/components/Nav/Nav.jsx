@@ -42,8 +42,8 @@ export default function Nav(props) {
   };
   const BG = props.BG;
   const toggleServiceNavbar = () => {
-    setIsServiceNavbarOpen(prevState => !prevState);
-};
+    setIsServiceNavbarOpen((prevState) => !prevState);
+  };
 
   const [isServiceNavbarOpen, setIsServiceNavbarOpen] = useState(false);
 
@@ -81,9 +81,6 @@ export default function Nav(props) {
                 <span className="submenuitem">Aqua Gold</span>
                 <span className="submenuitem">Exillis</span>
                 <span className="submenuitem">PRP with microneedling</span>
-                {/* <a className="submenuhead" href="service4">
-                  Chemical Peel Treatment
-                </a> */}
               </div>
               <div>
                 <a className="submenuhead" href="service3">
@@ -171,54 +168,11 @@ export default function Nav(props) {
               >
                 Services
               </a>
-              <a
-                className="navBTNPhone"
-                onClick={toggleResponsiveMenu}
-                href="#"
-              >
-                Services
-              </a>
               <ul
                 className={`responsiveMENUCON ${
                   showResponsiveMenu ? "active" : ""
                 }`}
-              >
-                <li>
-                  <a className="responsiveMEnu" href="service1">
-                    Anti-ageing Procedures
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service4">
-                    Chemical Peel Treatment
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service3">
-                    Skin Concerns
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service7">
-                    makeover
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service5">
-                    Skin Maintenance
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service2">
-                    Body Treatments
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service6">
-                    hair treatments
-                  </a>
-                </li>
-              </ul>
+              ></ul>
             </li>
             <li className="liNav" onClick={closeMenu}>
               <a
@@ -237,9 +191,7 @@ export default function Nav(props) {
             toggleMenu();
             closeResponsiveMenu();
           }}
-        >
-          {/* <Image className="navmenuIcon" src={menu} alt="Logo" /> */}
-        </span>
+        ></span>
         <button className="navABTN">
           Book an appointment <Image className="rightIMG" src={RIGHT} alt="" />
         </button>
@@ -247,10 +199,11 @@ export default function Nav(props) {
 
       <nav className="navbarPhone">
         <div className="logodivnewnav">
-          <span className="logoNAMEP">Dr Akanksha Agarwal</span>
+          <a href="">
+            <span className="logoNAMEP">Dr Akanksha Agarwal</span>
+          </a>
         </div>
         <div>
-          {/* <Image className="navmenuIcon" src={menu} alt="Logo" /> */}
           <Image
             className="navmenuIcon"
             src={menu}
@@ -261,7 +214,6 @@ export default function Nav(props) {
       </nav>
       {isMenuOpen && (
         <div className={`ResponNav1 ${isMenuOpen ? "slide-in" : "slide-out"}`}>
-          {/* <Image className="navmenucross" src={cross} alt="" /> */}
           <Image
             className="navmenucross"
             src={cross}
@@ -271,10 +223,16 @@ export default function Nav(props) {
 
           <div className="respondiv2">
             <div className="mainlinks">
-              <a href="about" className="navnewlinksS maillinksatag">About</a>
-              <div className="navnewlinksS" onClick={toggleServiceNavbar}>Services</div>
+              <a href="about" className="navnewlinksS maillinksatag">
+                About
+              </a>
+              <div className="navnewlinksS" onClick={toggleServiceNavbar}>
+                Services
+              </div>
 
-              <a href="contact" className="navnewlinksS maillinksatag">Contact</a>
+              <a href="contact" className="navnewlinksS maillinksatag">
+                Contact
+              </a>
             </div>
             <div className="navresponbtn">
               <button className="bookbtnnavrespon">Book an appointment</button>
@@ -298,12 +256,18 @@ export default function Nav(props) {
         </div>
       )}
       {isServiceNavbarOpen && (
-      <div className={`servicnavbar ${isMenuOpen ? "slide-in" : "slide-out"}`}>
-        <Image className="navmenucross" src={cross} alt="" onClick={toggleServiceNavbar} />
+        <div
+          className={`servicnavbar ${isMenuOpen ? "slide-in" : "slide-out"}`}
+        >
+          <Image
+            className="navmenucross"
+            src={cross}
+            alt=""
+            onClick={toggleServiceNavbar}
+          />
 
-
-        <div className="respondiv2">
-          <div className="servicemenuservice">SERVICES</div>
+          <div className="respondiv2">
+            <div className="servicemenuservice">SERVICES</div>
             <ul className="mainlinksS">
               <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service1">
@@ -341,22 +305,22 @@ export default function Nav(props) {
                 </a>
               </li>
             </ul>
-          <div className="respondiv3S">
-            <div className="navnamebelow">
-              Dr Akanksha <br />
-              Agarwal
-            </div>
-            <div className="respondiv3_1">
-              <div className="navphonum">+91 9990363087</div>
-              <div className="naviconslinks">
-                <Image src={insta} alt="" />
-                <Image src={face} alt="" />
-                <Image src={mail} alt="" />
+            <div className="respondiv3S">
+              <div className="navnamebelow">
+                Dr Akanksha <br />
+                Agarwal
+              </div>
+              <div className="respondiv3_1">
+                <div className="navphonum">+91 9990363087</div>
+                <div className="naviconslinks">
+                  <Image src={insta} alt="" />
+                  <Image src={face} alt="" />
+                  <Image src={mail} alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       )}
     </div>
   );

@@ -81,9 +81,6 @@ export default function Nav(props) {
                 <span className="submenuitem">Aqua Gold</span>
                 <span className="submenuitem">Exillis</span>
                 <span className="submenuitem">PRP with microneedling</span>
-                {/* <a className="submenuhead" href="service4">
-                  Chemical Peel Treatment
-                </a> */}
               </div>
               <div>
                 <a className="submenuhead" href="service3">
@@ -171,53 +168,11 @@ export default function Nav(props) {
               >
                 Services
               </a>
-              <a
-                className="navBTNPhone"
-                onClick={toggleResponsiveMenu}
-                href="#"
-              >
-                Services
-              </a>
               <ul
                 className={`responsiveMENUCON ${
                   showResponsiveMenu ? "active" : ""
                 }`}
               >
-                <li>
-                  <a className="responsiveMEnu" href="service1">
-                    Anti-ageing Procedures
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service4">
-                    Chemical Peel Treatment
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service3">
-                    Skin Concerns
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service7">
-                    makeover
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service5">
-                    Skin Maintenance
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service2">
-                    Body Treatments
-                  </a>
-                </li>
-                <li>
-                  <a className="responsiveMEnu" href="service6">
-                    hair treatments
-                  </a>
-                </li>
               </ul>
             </li>
             <li className="liNav" onClick={closeMenu}>
@@ -238,19 +193,16 @@ export default function Nav(props) {
             closeResponsiveMenu();
           }}
         >
-          {/* <Image className="navmenuIcon" src={menu} alt="Logo" /> */}
         </span>
         <button className="navABTN">
           Book an appointment <Image className="rightIMG" src={RIGHT} alt="" />
         </button>
       </nav>
-
       <nav className="navbarPhone">
         <div className="logodivnewnav">
           <span className="logoNAMEP">Dr Akanksha Agarwal</span>
         </div>
         <div>
-          {/* <Image className="navmenuIcon" src={menu} alt="Logo" /> */}
           <Image
             className="navmenuIcon"
             src={menu}
@@ -261,7 +213,6 @@ export default function Nav(props) {
       </nav>
       {isMenuOpen && (
         <div className={`ResponNav1 ${isMenuOpen ? "slide-in" : "slide-out"}`}>
-          {/* <Image className="navmenucross" src={cross} alt="" /> */}
           <Image
             className="navmenucross"
             src={cross}
