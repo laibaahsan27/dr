@@ -1,21 +1,19 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "./serviceCard.css";
 import TextField from '@mui/material/TextField';
-import Image from "next/image";
-import phone from "../../images/Phone.svg";
-import mail from "../../images/mail.svg";
-
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 const ServiceCard = () => {
-  const styles = ({
-    SFinput: {
-        border: 'none',
-        // borderBottom: '1px solid #F7DEE4',
-        backgroundColor: '#C36386',
-        paddingBottom: '15px',
-        color: '#F7DEE4',
-    },
-  });
+  const [age, setAge] = useState("");
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+
 
   return (
     <>
@@ -25,10 +23,23 @@ const ServiceCard = () => {
 
           <div className="serviceForm">
             <form className="serviceFormInner" action="">
-             <TextField className='SFinput'  sx={styles.SFinput} id="standard-basic"  placeholder="Full Name" label="Full Name" variant="standard" />
-              <TextField className='SFinput' sx={styles.SFinput} id="standard-basic"  placeholder="Phone Number" label="Phone Number" variant="standard" />
-              <TextField className='SFinput' sx={styles.SFinput} id="standard-basic"  placeholder="Email" label="Email" variant="standard" />
-              <TextField className='SFinput' sx={styles.SFinput}id="standard-basic"  placeholder="Book Service" label="Book Service" variant="standard" />
+             <TextField className='SFinput' id="standard-basic"  placeholder="Full Name" label="Full Name" variant="standard" />
+              <TextField className='SFinput' id="standard-basic"  placeholder="Phone Number" label="Phone Number" variant="standard" />
+              <TextField className='SFinput' id="standard-basic"  placeholder="Email" label="Email" variant="standard" />
+              <FormControl sx={{ width: "100%" }} className="s4">
+                <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label="Age"
+                  onChange={handleChange}
+                >
+                  <MenuItem value={10}>Ten</MenuItem>
+                  <MenuItem value={20}>Twenty</MenuItem>
+                  <MenuItem value={30}>Thirty</MenuItem>
+                </Select>
+              </FormControl>
               <button className="SFbutton" type="submit">
                 Book an Appointment
               </button>
