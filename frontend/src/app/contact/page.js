@@ -9,6 +9,7 @@ import addressPinPhone from "../../images/MapPinLinePhone.svg";
 import user from "../../images/UserCircle.svg";
 import userPhone from "../../images/UserCircle Phone.svg";
 import ContactCard from "@/components/contactThird/ContactCard";
+import Nav from "@/components/Nav/Nav";
 
 const page = () => {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -25,6 +26,8 @@ const page = () => {
 
   return (
     <>
+          <Nav/>
+
       <div className="contactContainer">
         <div className="headingCC">
           <p className="headingContact">Contact</p>

@@ -68,3 +68,44 @@
         width:350px
     }
 }
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
+    color: #F7DEE4;
+    font-size: 17px;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:after{
+    border-bottom: 2px solid #F7DEE4;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 2px solid #F7DEE4;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before {
+    border-bottom: 2px solid #F7DEE4;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root{
+    color: #F7DEE4;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: #F7DEE4;
+
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+    color: #F7DEE4;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+    color: #F7DEE4;
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+    color: #F7DEE4;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: #F7DEE4;
+}
+.css-bpeome-MuiSvgIcon-root-MuiSelect-icon{
+    color: #F7DEE4;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: #F7DEE4;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: #F7DEE4;
+}
