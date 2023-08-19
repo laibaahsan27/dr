@@ -77,14 +77,6 @@ export default function page() {
 
   return (
     <div className="service1CON">
-      {/* {list.map((list) => {
-        return (
-          <div className="outerS" id={list.id}>
-            <div className="topHead">{list.heading}</div>
-            <div className="topTxt">{list.content}</div>
-          </div>
-        );
-      })} */}
       <ServiceHeading heading={list[0].heading} content={list[0].content} />
       {/* <div className="service1IMG"> */}
       <Image className="service1IMG" src={ONE} alt="" />

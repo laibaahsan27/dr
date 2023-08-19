@@ -9,9 +9,9 @@
     width: 100%;
 }
 .serviceCoverImage{
-    margin: 0px 50px;
-    width: 90%;
-    height: 30%;
+    margin: 0px 40px;
+    width: 95%;
+    height: auto;
 }
 .servicePagesCard{
     /* margin-top: 20px; */
