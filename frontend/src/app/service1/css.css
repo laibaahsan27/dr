@@ -1,5 +1,6 @@
 
 .service1IMG{
+    /* display: none; */
     margin: 10px 40px;
     width: 94%;
 }
@@ -69,12 +70,34 @@
     text-transform: lowercase;
     margin: 8px;
 }
+.service1IMGPHONE{
+    display: none;
+}
+.phoneservice1list{
+    display: none;
+}
+
 @media (max-width: 768px) {
     .navbar{
         background-color: rgba(187, 79, 119, 1);
     }
     .logoName {
         color: #FBE8EF;
+    }
+    .phoneservice1list{
+        display: block;
+        color: #9C003C;
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .service1IMGPHONE{
+        display: block;
+        margin: 0 25px;
+        width: 87%;
+        height: auto;
     }
     .service1IMG{
         display: none;

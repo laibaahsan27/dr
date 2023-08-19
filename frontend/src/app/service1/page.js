@@ -5,6 +5,7 @@ import ServiceText from "@/components/ServiceText/ServiceText";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import Nav from '@/components/Nav/Nav'
+import TWO from '../../images/facenumbers.svg'
 
 export default function page() {
   const list = [
@@ -81,9 +82,17 @@ export default function page() {
     <Nav/>
     <div className="service1CON">
       <ServiceHeading heading={list[0].heading} content={list[0].content} />
-      {/* <div className="service1IMG"> */}
       <Image className="service1IMG" src={ONE} alt="" />
-      {/* </div> */}
+      <Image className="service1IMGPHONE" src={TWO} alt="" />
+      <div>
+        <ol className="phoneservice1list">
+          <li>Forehead lines and Wrinkles</li>
+          <li>Dark circles</li>
+          <li>Reduce scars</li>
+          <li>Smile lines</li>
+          <li>Skin texture and chin wrinkles</li>
+        </ol>
+      </div>
 
       <div className="serviceCover">
         <div>

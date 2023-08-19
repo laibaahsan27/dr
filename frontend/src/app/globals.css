@@ -121,10 +121,6 @@ h2 {
   overflow: hidden;
   z-index: 1;
 }
-/* .heroBTN2:hover{
-  background-color: #BB4F77;
-  color: rgba(247, 222, 228, 1);
-} */
 .heroBTN2:before {
   content: "";
   position: absolute;
