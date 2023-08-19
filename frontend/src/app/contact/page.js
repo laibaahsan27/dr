@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact.css";
 import Image from "next/image";
-import clock from "../../images/clock.svg";
+import clock from "../../images/Clock.svg";
 import addressPin from "../../images/MapPinLine.svg";
 import user from "../../images/UserCircle.svg";
 
