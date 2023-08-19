@@ -5,7 +5,7 @@ import lip from "../../images/servicepage7.png";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceText from "@/components/ServiceText/ServiceText";
-import Nav from '@/components/Nav/Nav'
+import Nav from '@/components/NavService/NavService'
 export default function page() {
   const list = [
     {

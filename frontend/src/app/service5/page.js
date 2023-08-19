@@ -8,7 +8,7 @@ import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import SvCard from "@/components/SvCard/SvCard";
 import mobile from "../../images/sv5-m.png";
-import Nav from '@/components/Nav/Nav'
+import Nav from '@/components/NavService/NavService'
 export default function page() {
   // const windowWidth = window.innerWidth;
   // const IMG = windowWidth > 768 ? lip : mobile;

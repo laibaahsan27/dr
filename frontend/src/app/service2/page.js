@@ -9,7 +9,7 @@ import FIVE from "../../images/servicepage2tattoo.svg"
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceText from "@/components/ServiceText/ServiceText";
-import Nav from '@/components/Nav/Nav'
+import Nav from '@/components/NavService/NavService'
 
 export default function page() {
   const list = [

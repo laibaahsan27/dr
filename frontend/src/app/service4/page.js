@@ -6,7 +6,7 @@ import image from "../../images/sv4.png";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import List from "@/components/List/List";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
-import Nav from '@/components/Nav/Nav'
+import Nav from '@/components/NavService/NavService'
 
 export default function page() {
   const list = [

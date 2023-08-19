@@ -1,6 +1,6 @@
 import React from 'react'
 import './css.css'
-import Nav from '@/components/Nav/Nav'
+import Nav from '@/components/NavService/NavService'
 
 export default function page() {
 const list=[

@@ -63,12 +63,6 @@ text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
-    .navbar{
-        background-color: rgba(187, 79, 119, 1);
-    }
-    .logoName {
-        color: #FBE8EF;
-    }
     .imageService{
         /* margin: auto 10px; */
         display: flex;

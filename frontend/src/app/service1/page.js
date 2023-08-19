@@ -4,7 +4,7 @@ import ONE from "../../images/service1img.svg";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
-import Nav from '@/components/Nav/Nav'
+import Nav from '@/components/NavService/NavService'
 import TWO from '../../images/facenumbers.svg'
 
 export default function page() {
