@@ -195,7 +195,7 @@ export default function Nav() {
                   </a>
                 </li>
                 <li>
-                  <a className="responsiveMEnu" href="service3">
+                  <a className="responsiveMEnu" href="service2">
                     Body Treatments
                   </a>
                 </li>
