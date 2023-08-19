@@ -77,7 +77,20 @@
       margin-bottom: 30px;
       
     }
-    .cardHead{
-      display: none;
+    .awardsANDT{
+      font-size: 100px;
+    }
+    .awardsACHT{
+      font-size: 30px;
+      line-height: 25px;
+    }
+    .AADIVT{
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    .awardsHEADINDCONT{
+      display: flex;
+      margin-top: 50px;
+      margin-right: 155px;
     }
   }

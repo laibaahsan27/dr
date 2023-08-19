@@ -522,11 +522,12 @@
 } */
 
 .ResponNav1 {
+  width: auto;
   display: block;
   position: fixed;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 700px;
   z-index: 10000000000;
   padding: 30px 0px 0px 0px;
   background: linear-gradient(
@@ -589,7 +590,10 @@
     gap: 0px;
     padding-top: 40px;
   }
-  .navnewlinks{
+  .maillinksatag{
+    color: #bb4f77;
+  }
+  .navnewlinksS{
     padding: 15px 0px 15px 35px;
   }
   .navnewlinks:active {
@@ -599,7 +603,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px 25px 200px 25px;
+    padding: 30px 25px 120px 25px;
   }
   .bookbtnnavrespon {
     display: flex;
@@ -640,8 +644,6 @@
   .respondiv3 {
     padding: 0 25px;
   }
-  .respondiv3_1 {
-  }
   .navnamebelow {
     color: #bb4f77;
     font-family: "Poppins";
@@ -665,11 +667,11 @@
   }
   .servicnavbar{
     display: block;
-
     position: fixed;
     right: 0;
     top: 0;
-    height: 100vh;
+    width: auto;
+    height: 700px;
     z-index: 10000000000;
     padding: 30px 0px 0px 0px;
     background: linear-gradient(
@@ -678,9 +680,12 @@
       #fff5f7 74.7%,
       #c36386 100%
     );
-    /* overflow: hidden;
+    overflow: hidden;
     transform: translateX(100%);
-    transition: transform 0.3s ease; */
+    transition: transform 0.3s ease;
+  }
+  .respondiv3S{
+    margin: 10px 0 0 25px;
   }
   .responsiveMEnuNEW{
     color: #bb4f77;
@@ -689,7 +694,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 60px;
-    padding: 15px 20px 15px 0px;
+    padding: 5px 20px 5px 0px;
     text-transform: capitalize;
   }
   .mainlinksS {
@@ -699,6 +704,9 @@
   .mainlinksS{
     padding: 0px 46.3px 50px 20px;
     margin-top: 0;
+  }
+  .newnavli{
+    height: 45px;
   }
   .responsiveMEnuNEW:active {
     background-color: rgba(247, 222, 228, 1);

@@ -489,15 +489,6 @@ h2 {
     background: #FFF5F4;
     padding: 0px 0px;
   }
-  .headAwardsDESK{
-    display: none;
-  }
-  .headAwardsPHONE{
-    display: block;
-    margin: 25px auto;
-    /* width: 280px;
-    height: 106px; */
-  }
   .outerLIST2{
     border-radius: 13px;
     width: 290px;
@@ -522,6 +513,22 @@ h2 {
   }
   .trophy{
     margin-top: 13px;
+  }
+  .AADIV{
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .awardsAND{
+    font-size: 100px;
+  }
+  .awardsACH{
+    font-size: 30px;
+    line-height: 25px;
+  }
+  .AWARDSHEADING{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
   }
 }
 

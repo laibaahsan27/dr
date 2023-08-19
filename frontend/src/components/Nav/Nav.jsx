@@ -271,10 +271,10 @@ export default function Nav(props) {
 
           <div className="respondiv2">
             <div className="mainlinks">
-              <div className="navnewlinks">About</div>
-              <div className="navnewlinks" onClick={toggleServiceNavbar}>Services</div>
+              <a href="about" className="navnewlinksS maillinksatag">About</a>
+              <div className="navnewlinksS" onClick={toggleServiceNavbar}>Services</div>
 
-              <div className="navnewlinks">Contact</div>
+              <a href="contact" className="navnewlinksS maillinksatag">Contact</a>
             </div>
             <div className="navresponbtn">
               <button className="bookbtnnavrespon">Book an appointment</button>
@@ -305,43 +305,43 @@ export default function Nav(props) {
         <div className="respondiv2">
           <div className="servicemenuservice">SERVICES</div>
             <ul className="mainlinksS">
-              <li>
+              <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service1">
                   Anti-ageing Procedures
                 </a>
               </li>
-              <li>
+              <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service4">
                   Chemical Peel Treatment
                 </a>
               </li>
-              <li>
+              <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service3">
                   Skin Concerns
                 </a>
               </li>
-              <li>
+              <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service7">
                   makeover
                 </a>
               </li>
-              <li>
+              <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service5">
                   Skin Maintenance
                 </a>
               </li>
-              <li>
+              <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service2">
                   Body Treatments
                 </a>
               </li>
-              <li>
+              <li className="newnavli">
                 <a className="responsiveMEnuNEW" href="service6">
                   hair treatments
                 </a>
               </li>
             </ul>
-          <div className="respondiv3">
+          <div className="respondiv3S">
             <div className="navnamebelow">
               Dr Akanksha <br />
               Agarwal
