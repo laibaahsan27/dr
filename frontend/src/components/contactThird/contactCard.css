@@ -1,0 +1,154 @@
+.CCcover{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20%;
+    justify-content: center;
+    align-items: center;
+}
+.ccHeading{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34.77px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BB4F77;
+}
+.ccInput {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 80% 80%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "s1 s2"
+        "s3 s4"
+        "s5 s5";
+    gap: 20px; /* Increase the gap between elements */
+}
+
+.s1 { 
+    grid-area: s1;
+    margin: 10px;
+}
+
+.s2 { 
+    grid-area: s2;
+    margin: 10px;
+}
+
+.s3 { 
+    grid-area: s3;
+    margin: 10px;
+}
+
+.s4 {
+    grid-area: s4;
+    margin: 10px;
+}
+.s5 {
+    grid-area: s5;
+}
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
+    color: #BB4F77;
+    font-size: 17px;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:after{
+    border-bottom: 2px solid #BB4F77;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 2px solid #BB4F77;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before {
+    border-bottom: 2px solid #BB4F77;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root{
+    color: #BB4F77;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: #BB4F77;
+
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+    color: #BB4F77;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+    color: #BB4F77;
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+    color: #BB4F77;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: #BB4F77;
+}
+.css-bpeome-MuiSvgIcon-root-MuiSelect-icon{
+    color: #BB4F77;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: #BB4F77;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: #BB4F77;
+}
+.boa{
+    margin-left: 29%;
+    margin-right: 50%;
+    translate: translateX(-50%);
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.SFbutton{
+   
+    border-radius: 7px;
+    border: none;
+    font-weight: 700;
+    padding: 2%;
+    height: 40px;
+    background-color: #C36386;
+    color: #F7DEE4;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.bgb{
+    text-align: center;
+}
+.SFconsultation{
+    margin-top: -13px;
+    text-decoration: none;
+    color: #C36386;
+    font-family: 'Numito Sans', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .ccInput {
+        display: grid;
+        grid-template-columns: 114%; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+            "s1"
+            "s2"
+            "s3"
+            "s4"
+            "s5";
+        gap: 20px; 
+    } 
+
+
+    .ccHeading{
+        font-size: 16px;
+        line-height: normal;   
+    }
+    .boa{
+        margin-left: 0%;
+        margin-right: 0%;
+        translate: translateX(-50%);
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
