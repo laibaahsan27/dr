@@ -5,6 +5,8 @@ import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import image from "../../images/sv4.png";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import List from "@/components/List/List";
+import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
+import Nav from '@/components/Nav/Nav'
 
 export default function page() {
   const list = [
@@ -63,14 +65,16 @@ export default function page() {
 
   return (
     <div>
-      {list.map((list) => {
+      <Nav/>
+      {/* {list.map((list) => {
         return (
           <div className="outerS" id={list.id}>
             <div className="topHead">{list.heading}</div>
             <div className="topTxt">{list.content}</div>
           </div>
         );
-      })}
+      })} */}
+      <ServiceHeading heading={list[0].heading} content={list[0].content} />
       <div className="serviceCover">
         <div className="serviceSection1">
           <div className="imageService">

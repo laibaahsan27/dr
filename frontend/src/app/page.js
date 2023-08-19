@@ -13,6 +13,7 @@ import HEADDESK from "../images/andAwards.svg";
 import HEADPHONE from "../images/andAwardsPhone.svg";
 import CARDS from "../components/Cards/Cards.jsx";
 import Appointment from "../components/appointment/appointment.jsx";
+import Nav from '@/components/Nav/Nav'
 // import BG from '../images/newhero.svg'
 
 
@@ -81,6 +82,7 @@ export default function Home() {
 
   return (
     <div>
+      <Nav/>
       <div className="heroCON">
         {/* <Image className="" src={BG} alt="" /> */}
         <div className="heroRightTxt">

@@ -1,5 +1,6 @@
 import React from 'react'
 import './css.css'
+import Nav from '@/components/Nav/Nav'
 
 export default function page() {
 const list=[
@@ -11,6 +12,8 @@ const list=[
 ];
 
   return (
+    <>
+    <Nav/>
     <div className='service3CON'>
       {list.map((list) => {
           return (
@@ -21,5 +24,6 @@ const list=[
           );
         })}
     </div>
+    </>
   )
 }

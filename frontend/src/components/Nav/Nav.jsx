@@ -5,10 +5,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import LOGO from "../../images/logoSVG.svg";
 import RIGHT from "../../images/CaretRight.svg";
-import menu from "../../images/hamburger.svg";
+import menu from "../../images/newham.svg";
 import tri from "../../images/Rectangle.svg";
 
-export default function Nav() {
+export default function Nav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
   const [showMegaBox, setShowMegaBox] = useState(false);
@@ -36,10 +36,10 @@ export default function Nav() {
   const closeResponsiveMenu = () => {
     setShowResponsiveMenu(false);
   };
-
+  const BG=props.BG
   return (
     <div>
-      <nav className="navbar">
+      <nav className="navbar" style={{backgroundColor:{BG}}}>
         <a className="logoName" href="/">
           <motion.div
             className="containerLogo"
@@ -175,7 +175,7 @@ export default function Nav() {
                   </a>
                 </li>
                 <li>
-                  <a className="responsiveMEnu" href="service2">
+                  <a className="responsiveMEnu" href="service4">
                     Chemical Peel Treatment
                   </a>
                 </li>
@@ -185,7 +185,7 @@ export default function Nav() {
                   </a>
                 </li>
                 <li>
-                  <a className="responsiveMEnu" href="service4">
+                  <a className="responsiveMEnu" href="service7">
                     makeover
                   </a>
                 </li>
@@ -195,7 +195,12 @@ export default function Nav() {
                   </a>
                 </li>
                 <li>
-                  <a className="responsiveMEnu" href="service7">
+                  <a className="responsiveMEnu" href="service2">
+                    Body Treatments
+                  </a>
+                </li>
+                <li>
+                  <a className="responsiveMEnu" href="service6">
                     hair treatments
                   </a>
                 </li>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito+Sans:wght@300&display=swap');
 
-.outerS{
+/* .outerS{
     border-radius: 16px;
     background: #BB4F77;
     padding: 30px;
@@ -14,7 +14,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 93.9%; /* 22.536px */
+    line-height: 93.9%; 
     text-transform: capitalize;
     padding-bottom: 20px;
 }
@@ -24,10 +24,8 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    /* line-height: 112.4%; */
-     /* 22.48px */
     padding-bottom: 13px;
-}
+} */
 .serviceCover{
     width: 100%;
     display: flex;
@@ -59,6 +57,12 @@
     color: #9C003C;
 }
 @media (max-width: 768px) {
+    .navbar{
+        background-color: rgba(187, 79, 119, 1);
+    }
+    .logoName {
+        color: #FBE8EF;
+    }
     .imageService{
         /* margin: auto 10px; */
         display: flex;

@@ -4,11 +4,11 @@ import "./css.css";
 import Image from "next/image";
 import lip from "../../images/Rectangle 49.svg";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
-
+import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import SvCard from "@/components/SvCard/SvCard";
 import mobile from "../../images/sv5-m.png";
-
+import Nav from '@/components/Nav/Nav'
 export default function page() {
   // const windowWidth = window.innerWidth;
   // const IMG = windowWidth > 768 ? lip : mobile;
@@ -84,14 +84,8 @@ export default function page() {
   ];
   return (
     <div>
-      {list.map((list) => {
-        return (
-          <div className="outerS" id={list.id}>
-            <div className="topHead">{list.heading}</div>
-            <div className="topTxt">{list.content}</div>
-          </div>
-        );
-      })}
+      <Nav/>
+      <ServiceHeading heading={list[0].heading} content={list[0].content} />
       <div className="serviceCover">
         <div className="serviceSection1">
           <div className="imageService">
