@@ -1,7 +1,7 @@
 .cardHead{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 0px;
     margin-bottom: 30px;
   }
   
@@ -34,6 +34,39 @@
   }
   .cardsheadphone{
     display: none;
+  }
+  .awardsHEADINDCONT{
+    display: flex;
+    margin-top: 50px;
+    margin-right: 200px;
+  }
+  .AADIVT{
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .awardsANDT{
+    position: relative;
+    color: #EAADC3;
+    font-family: 'Nunito Sans';
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.9%; /* 148.352px */
+    text-transform: uppercase;
+  }
+  .awardsACHT{
+    color: #BB4F77;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito Sans';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35px;
+    text-transform: uppercase;
   }
   @media(max-width: 768px){
     .cardsheadphone{

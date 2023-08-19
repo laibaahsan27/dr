@@ -1,6 +1,4 @@
-
-
-.responsiveMENUCON{
+.responsiveMENUCON {
   display: none;
 }
 
@@ -51,8 +49,16 @@
   margin-top: 8px;
   margin-left: 8px;
 }
-
-@media (max-width: 768px) {
+.navbarPhone {
+  display: none;
+}
+.ResponNav1{
+  display: none;
+}
+.servicnavbar{
+  display: none;
+}
+/* @media (max-width: 768px) {
   .navbar{     
     padding: 20px 25px;   
   }
@@ -74,7 +80,7 @@
   .logoNAME {
     margin-top: 0px;
   }
-}
+} */
 
 .menubar__button {
   display: none;
@@ -96,7 +102,7 @@
   display: block;
 }
 .menu {
-  position: relative; 
+  position: relative;
 }
 .subMenuParent {
   position: relative;
@@ -182,92 +188,15 @@
 }
 .responsiveMENUCON {
   display: none;
-  /* other styles */
 }
 
 .responsiveMENUCON.active {
   display: block;
 }
-.navBTNPhone{
+.navBTNPhone {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .navBTNSS{
-    display: none;
-  }
-  .navBTNPhone{
-    display: block;
-    color: #c36386;
-    font-family: "Poppins";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-    border-radius: 9px;
-    padding: 10px;
-  }
-  .hover-effect .navBTNPhone {
-    background-color: rgba(252, 230, 238, 1);
-  }
-  .navBTNPhone:hover{
-    background-color: rgba(252, 230, 238, 1);
-  }
-  .menu {
-    display: none;
-  }
-  .menu.active {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-  .menubar__button {
-    display: block;
-  }
-  .liNav{
-    /* text-align: left; */
-    margin: 10px 0;
-  }
-  .middleNav {
-    flex-direction: column;
-    padding: 20px 0;
-    margin: 0;
-}
-  .navABTN {
-    display: none;
-  }
-  .menu {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 245, 244, 1);
-    /* border-top: 1px solid #ddd;  */
-    z-index: 1000;
-    transition: 0.5s;
-  }
-  .responsiveMENUCON{
-    padding: 0;
-    list-style-type: none;
-    background-color: #c36386;
-    padding: 10px 0;
-    margin: 10px 0;
-  }
-  .responsiveMEnu{
-    text-decoration: none;
-      color: rgba(255, 245, 244, 1);
-      font-family: "Poppins";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-decoration: none;
-      border-radius: 9px;
-      padding: 10px;
-  }
-}
 .mega-box {
   border-radius: 25px;
   background: #f7dee4;
@@ -324,7 +253,7 @@
   width: 225px;
 }
 
-@media(max-width: 1286px){
+@media (max-width: 1286px) and (min-width: 767px) {
   /* .mega-box {
     width: 1050px;
   } */
@@ -338,7 +267,7 @@
     width: 190px;
   }
 }
-@media(max-width: 768px){
+/* @media(max-width: 768px){
   .liNav{
     text-align: center;
     margin: 5px 0;
@@ -348,7 +277,6 @@
     width: 92.2%;
     z-index: 100;
     padding: 16px;
-    /* display: block; */
     z-index: 10000;
   }
   .mega-box.active {
@@ -371,5 +299,463 @@
   }
   .submenuitem {
     display: none;
+  }
+} */
+.navbarPhone{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    /* padding: 20px 25px;    */
+  }
+  /* .containerLogo {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+  }
+  .logoImg {
+    width: 26px;
+    height: 26px;
+    margin-top: 2px;
+  }
+
+  .logoName {
+    padding-top: 4px;
+    font-size: 18px;
+  }
+  .logoNAME {
+    margin-top: 0px;
+  }
+  .navBTNSS{
+    display: none;
+  }
+  .navBTNPhone{
+    display: block;
+    color: #c36386;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 10px;
+  }
+  .hover-effect .navBTNPhone {
+    background-color: rgba(252, 230, 238, 1);
+  }
+  .navBTNPhone:hover{
+    background-color: rgba(252, 230, 238, 1);
+  }
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .menubar__button {
+    display: block;
+  }
+  .liNav{
+    margin: 10px 0;
+  }
+  .middleNav {
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0;
+}
+  .navABTN {
+    display: none;
+  }
+  .menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 245, 244, 1);
+    z-index: 1000;
+    transition: 0.5s;
+  }
+  .responsiveMENUCON{
+    padding: 0;
+    list-style-type: none;
+    background-color: #c36386;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+  .responsiveMEnu{
+    text-decoration: none;
+      color: rgba(255, 245, 244, 1);
+      font-family: "Poppins";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 10px;
+  }
+  .liNav{
+    text-align: center;
+    margin: 5px 0;
+  }
+  .mega-box {
+    top: 160px;
+    width: 92.2%;
+    z-index: 100;
+    padding: 16px;
+    z-index: 10000;
+  }
+  .mega-box.active {
+    display: block;
+  }
+  .navarrow {
+    display: none;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .submenuhead {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    width: auto;
+    margin: 10px 0;
+  }
+  .submenuitem {
+    display: none;
+  } */
+  /* .logoName {
+      color: #FBE8EF;
+  } */
+  .navbarPhone {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background-color: #FFF5F4;
+  }
+  .logodivnewnav{
+    padding-top: 5px;
+  }
+  .logoNAMEP {
+    color: rgba(187, 79, 119, 1);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  /* .ResponNav1 {
+    position: absolute;
+    z-index: 10000000000;
+    top: 0;
+    padding: 30px 0px 0px 0px;
+    background: linear-gradient(
+      180deg,
+      #fff5f4 69.88%,
+      #fff5f7 74.7%,
+      #c36386 100%
+    );
+    height: 800px;
+  }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ResponNav1 {
+  transform: translateX(100%);
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.ResponNav1.active {
+  animation: slideInFromRight 0.3s forwards; 
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.ResponNav1 {
+  transform: translateX(100%);
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.ResponNav1.slide-in {
+  animation: slideInFromRight 0.3s forwards;
+}
+.ResponNav1.slide-out {
+  animation: slideOutToRight 0.3s;
+}
+.ResponNav1.active {
+  transform: translateX(0);
+} */
+
+.ResponNav1 {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 10000000000;
+  padding: 30px 0px 0px 0px;
+  background: linear-gradient(
+    180deg,
+    #fff5f4 69.88%,
+    #fff5f7 74.7%,
+    #c36386 100%
+  );
+  overflow: hidden;
+
+  /* Starting state (menu is off to the right, out of view) */
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* Class for when the menu is open */
+.ResponNav1.slide-in {
+  transform: translateX(0);
+  animation: slideInFromRight 0.3s forwards;
+}
+
+/* Class for when the menu is closed */
+.ResponNav1.slide-out {
+  animation: slideOutToRight 0.3s forwards;
+}
+
+
+
+
+
+  .navmenucross {
+    position: relative;
+    left: 85%;
+  }
+  .mainlinks {
+    color: #bb4f77;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.5%; /* 28.2px */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding-top: 40px;
+  }
+  .navnewlinks{
+    padding: 15px 0px 15px 35px;
+  }
+  .navnewlinks:active {
+    background-color: rgba(247, 222, 228, 1);
+  }
+  .navresponbtn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 25px 200px 25px;
+  }
+  .bookbtnnavrespon {
+    display: flex;
+    width: 344px;
+    height: 49px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    background: #bb4f77;
+    border: none;
+    color: #fff;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 109.9%; /* 21.98px */
+  }
+  .conbtnnavrespon {
+    display: flex;
+    width: 343px;
+    height: 49px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: 2px solid #bb4f77;
+    background-color: #fff5f4;
+    color: #bb4f77;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 109.9%; /* 21.98px */
+  }
+  .respondiv3 {
+    padding: 0 25px;
+  }
+  .respondiv3_1 {
+  }
+  .navnamebelow {
+    color: #bb4f77;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 30px */
+    margin-bottom: 20px;
+  }
+  .navphonum {
+    color: #9c003c;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.5%;
+    margin-bottom: 10px;
+  }
+  .naviconslinks {
+    display: flex;
+  }
+  .servicnavbar{
+    display: block;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 10000000000;
+    padding: 30px 0px 0px 0px;
+    background: linear-gradient(
+      180deg,
+      #fff5f4 69.88%,
+      #fff5f7 74.7%,
+      #c36386 100%
+    );
+    /* overflow: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease; */
+  }
+  .responsiveMEnuNEW{
+    color: #bb4f77;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    padding: 15px 20px 15px 0px;
+    text-transform: capitalize;
+  }
+  .mainlinksS {
+    list-style-type: none;
+    padding-top: 0px;
+  }
+  .mainlinksS{
+    padding: 0px 46.3px 50px 20px;
+    margin-top: 0;
+  }
+  .responsiveMEnuNEW:active {
+    background-color: rgba(247, 222, 228, 1);
+  }
+  .servicemenuservice{
+    color: #9C003C;
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-top: 60px;
+  }
+  .servicnavbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 10000000000;
+    padding: 30px 0px 0px 0px;
+    background: linear-gradient(
+      180deg,
+      #fff5f4 69.88%,
+      #fff5f7 74.7%,
+      #c36386 100%
+    );
+    overflow: hidden;
+  
+    /* Starting state (menu is off to the right, out of view) */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutToRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  /* Class for when the menu is open */
+  .servicnavbar.slide-in {
+    transform: translateX(0);
+    animation: slideInFromRight 0.3s forwards;
+  }
+  
+  /* Class for when the menu is closed */
+  .servicnavbar.slide-out {
+    animation: slideOutToRight 0.3s forwards;
   }
 }

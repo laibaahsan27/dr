@@ -5,8 +5,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import LOGO from "../../images/logoSVG.svg";
 import RIGHT from "../../images/CaretRight.svg";
-import menu from "../../images/newham.svg";
+import menu from "../../images/hamburger.svg";
+import cross from "../../images/cross.svg";
 import tri from "../../images/Rectangle.svg";
+import insta from "../../images/InstagramLogonav.svg";
+import face from "../../images/FacebookLogonav.svg";
+import mail from "../../images/Envelopenav.svg";
 
 export default function Nav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,15 +35,21 @@ export default function Nav(props) {
     setIsSubMenuOpen(false);
   };
   const toggleResponsiveMenu = () => {
-    setShowResponsiveMenu(prevState => !prevState);
+    setShowResponsiveMenu((prevState) => !prevState);
   };
   const closeResponsiveMenu = () => {
     setShowResponsiveMenu(false);
   };
-  const BG=props.BG
+  const BG = props.BG;
+  const toggleServiceNavbar = () => {
+    setIsServiceNavbarOpen(prevState => !prevState);
+};
+
+  const [isServiceNavbarOpen, setIsServiceNavbarOpen] = useState(false);
+
   return (
     <div>
-      <nav className="navbar" style={{backgroundColor:{BG}}}>
+      <nav className="navbar" style={{ backgroundColor: { BG } }}>
         <a className="logoName" href="/">
           <motion.div
             className="containerLogo"
@@ -168,7 +178,11 @@ export default function Nav(props) {
               >
                 Services
               </a>
-              <ul className={`responsiveMENUCON ${showResponsiveMenu ? 'active' : ''}`}>
+              <ul
+                className={`responsiveMENUCON ${
+                  showResponsiveMenu ? "active" : ""
+                }`}
+              >
                 <li>
                   <a className="responsiveMEnu" href="service1">
                     Anti-ageing Procedures
@@ -217,13 +231,133 @@ export default function Nav(props) {
             </li>
           </ul>
         </div>
-        <span className="menubar__button" onClick={() => { toggleMenu(); closeResponsiveMenu(); }}>
-          <Image className="navmenuIcon" src={menu} alt="Logo" />
+        <span
+          className="menubar__button"
+          onClick={() => {
+            toggleMenu();
+            closeResponsiveMenu();
+          }}
+        >
+          {/* <Image className="navmenuIcon" src={menu} alt="Logo" /> */}
         </span>
         <button className="navABTN">
           Book an appointment <Image className="rightIMG" src={RIGHT} alt="" />
         </button>
       </nav>
+
+      <nav className="navbarPhone">
+        <div className="logodivnewnav">
+          <span className="logoNAMEP">Dr Akanksha Agarwal</span>
+        </div>
+        <div>
+          {/* <Image className="navmenuIcon" src={menu} alt="Logo" /> */}
+          <Image
+            className="navmenuIcon"
+            src={menu}
+            alt="Logo"
+            onClick={toggleMenu}
+          />
+        </div>
+      </nav>
+      {isMenuOpen && (
+        <div className={`ResponNav1 ${isMenuOpen ? "slide-in" : "slide-out"}`}>
+          {/* <Image className="navmenucross" src={cross} alt="" /> */}
+          <Image
+            className="navmenucross"
+            src={cross}
+            alt=""
+            onClick={closeMenu}
+          />
+
+          <div className="respondiv2">
+            <div className="mainlinks">
+              <div className="navnewlinks">About</div>
+              <div className="navnewlinks" onClick={toggleServiceNavbar}>Services</div>
+
+              <div className="navnewlinks">Contact</div>
+            </div>
+            <div className="navresponbtn">
+              <button className="bookbtnnavrespon">Book an appointment</button>
+              <button className="conbtnnavrespon">Online Consultation</button>
+            </div>
+            <div className="respondiv3">
+              <div className="navnamebelow">
+                Dr Akanksha <br />
+                Agarwal
+              </div>
+              <div className="respondiv3_1">
+                <div className="navphonum">+91 9990363087</div>
+                <div className="naviconslinks">
+                  <Image src={insta} alt="" />
+                  <Image src={face} alt="" />
+                  <Image src={mail} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {isServiceNavbarOpen && (
+      <div className={`servicnavbar ${isMenuOpen ? "slide-in" : "slide-out"}`}>
+        <Image className="navmenucross" src={cross} alt="" onClick={toggleServiceNavbar} />
+
+
+        <div className="respondiv2">
+          <div className="servicemenuservice">SERVICES</div>
+            <ul className="mainlinksS">
+              <li>
+                <a className="responsiveMEnuNEW" href="service1">
+                  Anti-ageing Procedures
+                </a>
+              </li>
+              <li>
+                <a className="responsiveMEnuNEW" href="service4">
+                  Chemical Peel Treatment
+                </a>
+              </li>
+              <li>
+                <a className="responsiveMEnuNEW" href="service3">
+                  Skin Concerns
+                </a>
+              </li>
+              <li>
+                <a className="responsiveMEnuNEW" href="service7">
+                  makeover
+                </a>
+              </li>
+              <li>
+                <a className="responsiveMEnuNEW" href="service5">
+                  Skin Maintenance
+                </a>
+              </li>
+              <li>
+                <a className="responsiveMEnuNEW" href="service2">
+                  Body Treatments
+                </a>
+              </li>
+              <li>
+                <a className="responsiveMEnuNEW" href="service6">
+                  hair treatments
+                </a>
+              </li>
+            </ul>
+          <div className="respondiv3">
+            <div className="navnamebelow">
+              Dr Akanksha <br />
+              Agarwal
+            </div>
+            <div className="respondiv3_1">
+              <div className="navphonum">+91 9990363087</div>
+              <div className="naviconslinks">
+                <Image src={insta} alt="" />
+                <Image src={face} alt="" />
+                <Image src={mail} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      )}
     </div>
   );
 }

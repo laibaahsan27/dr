@@ -84,7 +84,6 @@ export default function Home() {
     <div>
       <Nav/>
       <div className="heroCON">
-        {/* <Image className="" src={BG} alt="" /> */}
         <div className="heroRightTxt">
           Hi, I’m Dr. Akanksha Agarwal{" "}
           <span className="heroSpan">PGDCC | B.D.S.</span>
@@ -149,9 +148,14 @@ export default function Home() {
       </div>
       <div>
         <div className="aANDaCON">
-          <div>
-            <Image className="headAwardsDESK" src={HEADDESK} alt="" />
-            <Image className="headAwardsPHONE" src={HEADPHONE} alt="" />
+          <div className="AWARDSHEADING">
+            <div className="awardsHEADINDCON">
+              <span className="awardsAND">&</span>
+              <div className="AADIV">
+                <span className="awardsACH">AWARDS</span>
+                <span className="awardsACH"> ACHEIVMENTS</span>
+              </div>
+            </div>
           </div>
           <div className="awardsCon">
             {list2.map((list2) => {

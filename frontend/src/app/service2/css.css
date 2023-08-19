@@ -121,13 +121,13 @@
     }
     .service2headrightsec{
         text-align: left;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 24px;
     }
     .service2secrighttxt{
-        font-size: 16px;
+        font-size: 20px;
         padding: 20px 0;
-        line-height: 20px;
+        line-height: 112.4%;
     }
     .service2CoverImage{
         margin: 0px 25px 0px 25px;

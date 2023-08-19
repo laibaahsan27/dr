@@ -1,5 +1,8 @@
 
-
+a{
+    text-decoration: none;
+    color: rgba(247, 222, 228, 0.61);
+}
 .footerOUT{
     background: #FFF5F4;
     padding: 50px 0;
