@@ -24,11 +24,12 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 112.4%; /* 22.48px */
+    line-height: 112.4%;
 }
 
 @media (max-width: 768px) {
     .outerS{
+        border-radius: 0px;
         margin: 0px 0px;
         margin-top: 0px;
         margin-bottom: 20px;
@@ -43,6 +44,8 @@
         text-align: center;
     }
     .outerBg{
+        border-radius: 0px;
+        width: 100%;
         background: #BB4F77;
     }
 }
