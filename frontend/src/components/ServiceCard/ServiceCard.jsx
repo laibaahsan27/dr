@@ -1,9 +1,6 @@
 import React from "react";
 import "./serviceCard.css";
 import TextField from '@mui/material/TextField';
-import Image from "next/image";
-import phone from "../../images/Phone.svg";
-import mail from "../../images/mail.svg";
 
 
 const ServiceCard = () => {
@@ -28,7 +25,7 @@ const ServiceCard = () => {
              <TextField className='SFinput'  sx={styles.SFinput} id="standard-basic"  placeholder="Full Name" label="Full Name" variant="standard" />
               <TextField className='SFinput' sx={styles.SFinput} id="standard-basic"  placeholder="Phone Number" label="Phone Number" variant="standard" />
               <TextField className='SFinput' sx={styles.SFinput} id="standard-basic"  placeholder="Email" label="Email" variant="standard" />
-              <TextField className='SFinput' sx={styles.SFinput}id="standard-basic"  placeholder="Book Service" label="Book Service" variant="standard" />
+              <TextField className='SFinput' sx={styles.SFinput} id="standard-basic"  placeholder="Book Service" label="Book Service" variant="standard" />
               <button className="SFbutton" type="submit">
                 Book an Appointment
               </button>

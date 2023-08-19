@@ -53,7 +53,6 @@
     height: fit-content;
 }
 .clock{
-    /* margin-left: 7px; */
     width: 100%;
     height: auto;
 }
@@ -82,7 +81,9 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
 }
-
+.Lccover{
+    margin-top: -14px;
+}
 .add{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
@@ -101,7 +102,6 @@
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-
 }
 .Middle{
     display: flex;   
@@ -109,6 +109,13 @@
 .wha{
     width: 70%;
     height: 100%;
+    margin-top: -14px;
+}
+.LCsecond{
+    margin-top: 20px;
+}
+.brj{
+    margin-top: -14px;
 }
 
 @media (max-width: 768px) {
@@ -121,5 +128,11 @@
     .rightcard{
         height: 100%;
         width: 100%;
+    }
+    .headingContact{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 22.18px;
     }
 }
