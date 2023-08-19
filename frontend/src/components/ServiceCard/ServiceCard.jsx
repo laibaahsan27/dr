@@ -43,7 +43,7 @@ const ServiceCard = () => {
             <div className="maps">
               <iframe 
                 className="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.8427460706107!2d77.1045770741803!3d28.48428209079982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f3f17329a3d%3A0x7f8a3e8043429deb!2sEHI%20International%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1692267910213!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.839966358022!2d77.10396117613342!3d28.48436579079244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d195ade43d93d%3A0x5f39f707c70f7dc1!2sDr%20Ritesh%20Anand!5e0!3m2!1sen!2sin!4v1692439619117!5m2!1sen!2sin"
                 width="372"
                 height="200"
                 style={{ border: "0" }}
