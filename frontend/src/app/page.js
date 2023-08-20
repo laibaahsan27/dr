@@ -1,7 +1,7 @@
 "use client";
 import "./globals.css";
 import Image from "next/image";
-import DOC from "../images/doc.svg";
+import DOC from "../images/dr.svg";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import AnimatedText from "./AnimatedText";

@@ -11,6 +11,7 @@ import tri from "../../images/Rectangle.svg";
 import insta from "../../images/InstagramLogonav.svg";
 import face from "../../images/FacebookLogonav.svg";
 import mail from "../../images/Envelopenav.svg";
+import down from "../../images/Caretdown.svg";
 
 export default function Nav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -167,6 +168,7 @@ export default function Nav(props) {
                 href="#"
               >
                 Services
+                <Image className="navdownarrow" src={down} alt="" />
               </a>
               <ul
                 className={`responsiveMENUCON ${
@@ -199,7 +201,7 @@ export default function Nav(props) {
 
       <nav className="navbarPhone">
         <div className="logodivnewnav">
-          <a href="">
+          <a href="/">
             <span className="logoNAMEP">Dr Akanksha Agarwal</span>
           </a>
         </div>
@@ -239,10 +241,10 @@ export default function Nav(props) {
               <button className="conbtnnavrespon">Online Consultation</button>
             </div>
             <div className="respondiv3">
-              <div className="navnamebelow">
+              <a href="/" className="navnamebelow">
                 Dr Akanksha <br />
                 Agarwal
-              </div>
+              </a>
               <div className="respondiv3_1">
                 <div className="navphonum">+91 9990363087</div>
                 <div className="naviconslinks">
@@ -268,48 +270,48 @@ export default function Nav(props) {
 
           <div className="respondiv2">
             <div className="servicemenuservice">SERVICES</div>
-            <ul className="mainlinksS">
-              <li className="newnavli">
-                <a className="responsiveMEnuNEW" href="service1">
-                  Anti-ageing Procedures
-                </a>
-              </li>
-              <li className="newnavli">
-                <a className="responsiveMEnuNEW" href="service4">
-                  Chemical Peel Treatment
-                </a>
-              </li>
-              <li className="newnavli">
-                <a className="responsiveMEnuNEW" href="service3">
-                  Skin Concerns
-                </a>
-              </li>
-              <li className="newnavli">
-                <a className="responsiveMEnuNEW" href="service7">
-                  makeover
-                </a>
-              </li>
-              <li className="newnavli">
-                <a className="responsiveMEnuNEW" href="service5">
-                  Skin Maintenance
-                </a>
-              </li>
-              <li className="newnavli">
-                <a className="responsiveMEnuNEW" href="service2">
-                  Body Treatments
-                </a>
-              </li>
-              <li className="newnavli">
-                <a className="responsiveMEnuNEW" href="service6">
-                  hair treatments
-                </a>
-              </li>
-            </ul>
+            <div className="mainlinksS">
+              {/* <li className="newnavli"> */}
+              <a className="responsiveMEnuNEW" href="service1">
+                Anti-ageing Procedures
+              </a>
+              {/* </li> */}
+              {/* <li className="newnavli"> */}
+              <a className="responsiveMEnuNEW" href="service4">
+                Chemical Peel Treatment
+              </a>
+              {/* </li> */}
+              {/* <li className="newnavli"> */}
+              <a className="responsiveMEnuNEW" href="service3">
+                Skin Concerns
+              </a>
+              {/* </li> */}
+              {/* <li className="newnavli"> */}
+              <a className="responsiveMEnuNEW" href="service7">
+                makeover
+              </a>
+              {/* </li> */}
+              {/* <li className="newnavli"> */}
+              <a className="responsiveMEnuNEW" href="service5">
+                Skin Maintenance
+              </a>
+              {/* </li> */}
+              {/* <li className="newnavli"> */}
+              <a className="responsiveMEnuNEW" href="service2">
+                Body Treatments
+              </a>
+              {/* </li> */}
+              {/* <li className="newnavli"> */}
+              <a className="responsiveMEnuNEW" href="service6">
+                hair treatments
+              </a>
+              {/* </li> */}
+            </div>
             <div className="respondiv3S">
-              <div className="navnamebelow">
+              <a href="/" className="navnamebelow">
                 Dr Akanksha <br />
                 Agarwal
-              </div>
+              </a>
               <div className="respondiv3_1">
                 <div className="navphonum">+91 9990363087</div>
                 <div className="naviconslinks">
