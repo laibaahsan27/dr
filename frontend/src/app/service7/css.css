@@ -51,4 +51,12 @@
         margin-left: 0px;
         margin-left: 0;
     }
+    .servicePagesCard{
+        display: none;
+        margin-right: auto;
+        margin-left: 0px;
+    }
+    .servicePagesCardPhone{
+        display: block;
+    }
 }

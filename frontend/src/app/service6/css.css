@@ -24,6 +24,9 @@
     margin-right: 40px;
     justify-content: center;
 }
+.servicePagesCardPhone{
+    display: none;
+}
 
 @media (max-width: 768px) {
     .navbar{
@@ -47,7 +50,11 @@
         flex-direction: column;
     }
     .servicePagesCard{
+        display: none;
         margin-right: auto;
         margin-left: 0px;
+    }
+    .servicePagesCardPhone{
+        display: block;
     }
 }
