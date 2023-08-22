@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning={true} className={inter.className} style={{margin:'0', backgroundColor:'#FFF5F4',width:'100%'}}>
       {children}
-      <Foot/>
+      {/* <Foot/> */}
       </body>
     </html>
   )

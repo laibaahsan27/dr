@@ -10,6 +10,7 @@ import user from "../../images/UserCircle.svg";
 import userPhone from "../../images/UserCircle Phone.svg";
 import ContactCard from "@/components/contactThird/ContactCard";
 import Nav from "@/components/Nav/Nav";
+import Foot from "@/components/Footer/Footer";
 
 const page = () => {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -120,6 +121,8 @@ const page = () => {
 
         <ContactCard />
       </div>
+      <Foot />
+
     </>
   );
 };

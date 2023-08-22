@@ -1,6 +1,7 @@
 import React from 'react'
 import './css.css'
 import Nav from '@/components/NavService/NavService'
+import Foot from "@/components/Footer/Footer";
 
 export default function page() {
 const list=[
@@ -24,6 +25,7 @@ const list=[
           );
         })}
     </div>
+    <Foot/>
     </>
   )
 }

@@ -10,6 +10,7 @@ import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import Nav from '@/components/NavService/NavService'
+import Foot from "@/components/Footer/Footer";
 
 export default function page() {
   const list = [
@@ -139,6 +140,7 @@ export default function page() {
         </div>
       </div>
     </div>
+    <Foot />
     </>
   );
 }

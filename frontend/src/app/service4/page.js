@@ -7,6 +7,7 @@ import ServiceText from "@/components/ServiceText/ServiceText";
 import List from "@/components/List/List";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import Nav from '@/components/NavService/NavService'
+import Foot from "@/components/Footer/Footer";
 
 export default function page() {
   const list = [
@@ -64,6 +65,7 @@ export default function page() {
   ];
 
   return (
+    <>
     <div>
       <Nav/>
       {/* {list.map((list) => {
@@ -90,5 +92,7 @@ export default function page() {
         </div>
       </div>
     </div>
+    <Foot/>
+    </>
   );
 }

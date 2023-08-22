@@ -1,0 +1,12 @@
+.loginCover{
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #F7DEE4;
+    width: 50%;
+    border-radius: 5%;
+}
