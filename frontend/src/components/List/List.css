@@ -12,7 +12,11 @@
 }
 @media(max-width:768px){
     .sv4-l{
-        margin: 0px 20px;
+        margin: 0px 25px;
         margin-bottom: 55px;
+    }
+    .sv4-l-content{
+        font-size: 16px;
+        line-height: 20px;
     }
 }
