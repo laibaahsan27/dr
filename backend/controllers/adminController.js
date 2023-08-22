@@ -1,7 +1,7 @@
 const User = require('../Models/Admin');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-require('dotenv').config(); // Load environment variables
+require('dotenv').config(); 
 
 const jwtKey = process.env.JWT_KEY;
 

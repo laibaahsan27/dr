@@ -10,3 +10,19 @@
     width: 50%;
     border-radius: 5%;
 }
+.LoginHeading{
+    color: #C36386;
+}
+.loginForm{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .loginCover{
+        margin-top: 20%;
+        width: 100%;
+    }
+}

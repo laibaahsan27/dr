@@ -33,11 +33,11 @@ const AdminLoginPage = () => {
   return (
     <>
     <div className="loginCover">
-      <h1>Admin Login</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className="LoginHeading">Admin Login</h1>
+      <form className="loginForm" onSubmit={handleSubmit}>
         <div>
           <TextField
-            sx={{ width: "25ch" }}
+            sx={{ width: "100%" }}
             id="standard-basic"
             placeholder="Username"
             label="Username"
@@ -49,7 +49,7 @@ const AdminLoginPage = () => {
         </div>
         <div>
           <TextField
-            sx={{ width: "25ch", marginBottom: "20px" , color: "white" }}
+            sx={{ width: "100%", marginBottom: "20px" , color: "white" }}
             id="standard-basic"
             placeholder="Password"
             label="Password"
