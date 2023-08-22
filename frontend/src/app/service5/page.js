@@ -11,6 +11,7 @@ import mobile from "../../images/sv5-m.png";
 import Nav from '@/components/NavService/NavService'
 import Foot from "@/components/Footer/Footer";
 
+import Appointment from "@/components/appointment/appointment";
 export default function page() {
   // const windowWidth = window.innerWidth;
   // const IMG = windowWidth > 768 ? lip : mobile;
@@ -104,6 +105,9 @@ export default function page() {
 
         <div className="servicePagesCard">
           <ServiceCard />
+        </div>
+        <div className="servicePagesCardPhone">
+          <Appointment />
         </div>
       </div>
       <Foot/>

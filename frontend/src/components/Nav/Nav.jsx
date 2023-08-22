@@ -194,9 +194,11 @@ export default function Nav(props) {
             closeResponsiveMenu();
           }}
         ></span>
+        <a href="booking">
         <button className="navABTN">
           Book an appointment <Image className="rightIMG" src={RIGHT} alt="" />
         </button>
+        </a>
       </nav>
 
       <nav className="navbarPhone">

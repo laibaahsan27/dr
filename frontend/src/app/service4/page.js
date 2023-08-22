@@ -8,6 +8,7 @@ import List from "@/components/List/List";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import Nav from '@/components/NavService/NavService'
 import Foot from "@/components/Footer/Footer";
+import Appointment from "@/components/appointment/appointment";
 
 export default function page() {
   const list = [
@@ -89,6 +90,9 @@ export default function page() {
 
         <div className="servicePagesCard">
           <ServiceCard />
+        </div>
+        <div className="servicePagesCardPhone">
+          <Appointment />
         </div>
       </div>
     </div>
