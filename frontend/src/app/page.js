@@ -13,6 +13,7 @@ import HEADDESK from "../images/andAwards.svg";
 import HEADPHONE from "../images/andAwardsPhone.svg";
 import CARDS from "../components/Cards/Cards.jsx";
 import Appointment from "../components/appointment/appointment.jsx";
+import Foot from "@/components/Footer/Footer";
 import Nav from '@/components/Nav/Nav'
 // import BG from '../images/newhero.svg'
 
@@ -175,7 +176,7 @@ export default function Home() {
 
       <CARDS />
       <Appointment/>
-      
+      <Foot/>
     </div>
   );
 }

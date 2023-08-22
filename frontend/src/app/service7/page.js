@@ -7,6 +7,8 @@ import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import Nav from '@/components/NavService/NavService'
 import Appointment from "../../components/appointment/appointment.jsx";
+import Foot from "@/components/Footer/Footer";
+
 
 export default function page() {
   const list = [
@@ -60,6 +62,7 @@ export default function page() {
           <Appointment />
         </div>
       </div>
+      <Foot/>
     </>
   );
 }
