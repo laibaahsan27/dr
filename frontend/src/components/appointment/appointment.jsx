@@ -1,3 +1,5 @@
+
+"use client";
 import "./appointment.css";
 import Image from "next/image";
 import React, { useState } from "react";
