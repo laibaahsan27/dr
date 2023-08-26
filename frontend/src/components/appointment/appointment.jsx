@@ -13,6 +13,7 @@ export default function appointment() {
   return (
     <div className="bookA">
       <div className="bookForm">
+      <div className="contnow">contact now</div>
         <input className="bookInput" type="text" placeholder="Full Name" />
         <input className="bookInput" type="text" placeholder="Mobile Number" />
         <input className="bookInput" type="text" placeholder="Email" />
