@@ -1,35 +1,85 @@
 
 
-.outerS{
-    border-radius: 16px;
-    background: #BB4F77;
-    padding: 30px;
-    margin: 20px 50px;
+.service3CON{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
-.topHead{
-    color: #FBE8EF;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    font-family: 'Nunito Sans';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 93.9%; /* 22.536px */
-    text-transform: capitalize;
-    padding-bottom: 20px;
+
+.servicePagesCard{
+    /* margin-top: 20px; */
+    height: fit-content;
+    width: fit-content;
+    position: sticky;
+    top: 0px;
+    right: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
 }
-.topTxt{
-    color: #FBE8EF;
-    font-family: 'Nunito Sans';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 112.4%; /* 22.48px */
+.serv3imgdiv{
+    width: 100%;
+    margin-right: 70px;
+}
+.ser3img1{
+    margin: 0px 0px 0px 40px;
+    width: 95%;
+    height: auto;
+}
+.ser3img1phn{
+    display: none;
+}
+.servicePagesCardPhone{
+    display: none;
+}
+.ser3img1down{
+    margin: 0px 0px 0px 40px;
+    width: 95%;
+    height: auto;
+}
+.ser3img1phndown{
+    display: none;
 }
 @media (max-width: 768px) {
-    .navbar{
-        background-color: rgba(187, 79, 119, 1);
+    .imageService{
+        /* margin: auto 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .logoName {
-        color: #FBE8EF;
+    .serviceCoverImage{
+        width: 89%;
+        height: 100%;
+    }
+    .service3CON{
+        flex-direction: column;
+    }
+    .servicePagesCard{
+        margin-right: auto;
+        margin-left: 0px;
+        margin-left: 0;
+    }
+    .servicePagesCard{
+        display: none;
+        margin-right: auto;
+        margin-left: 0px;
+    }
+    .servicePagesCardPhone{
+        display: block;
+    }
+    .ser3img1down{
+        display: none;
+    }
+    .ser3img1phndown{
+        display: block;
+        margin: 0px 25px 0px 25px;
+    width: 87%;
+    height: auto;
+    }
+    .ser3img1{
+        margin: 0px 25px 0px 25px;
+        width: 87%;
+        height: auto;
     }
 }
