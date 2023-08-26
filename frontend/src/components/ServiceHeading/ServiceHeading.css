@@ -29,6 +29,7 @@
 
 @media (max-width: 768px) {
     .outerS{
+        padding: 25px;
         border-radius: 0px;
         margin: 0px 0px;
         margin-top: 77px;

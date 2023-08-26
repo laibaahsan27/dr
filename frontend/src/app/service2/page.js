@@ -11,6 +11,7 @@ import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceText from "@/components/ServiceText/ServiceText";
 import Nav from "@/components/NavService/NavService";
 import Foot from "@/components/Footer/Footer";
+import Appointment from "../../components/appointment/appointment.jsx";
 
 export default function page() {
   const list = [
@@ -144,6 +145,9 @@ export default function page() {
           <div className="servicePagesCard">
             <ServiceCard />
           </div>
+          <div className="servicePagesCardPhone">
+          <Appointment />
+        </div>
         </div>
       </div>
       <Foot />
