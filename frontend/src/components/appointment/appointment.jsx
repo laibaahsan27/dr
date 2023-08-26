@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import clinic from "../../images/clinic.svg";
 
 export default function appointment() {
-  const [value, setValue]=useState('')
+  const [value, setValue]=useState('Services')
   function handleSelect(event){
     setValue(event.target.value)
   }
@@ -17,15 +17,16 @@ export default function appointment() {
         <input className="bookInput" type="text" placeholder="Mobile Number" />
         <input className="bookInput" type="text" placeholder="Email" />
 
-        <select className="form-select-laiba" name="Services" id="" onChange={handleSelect} autocomplete="off" defaultValue="Services">
-        <option value="" disabled>Services</option>
+        <select className="form-select-laiba" name="Services" id="" onChange={handleSelect} >
+        {/* <option value="Services" disabled>Services</option> */}
+        <option value="Services">Services</option>
           <option value="ANTI-AGEING PROCEDURES">ANTI-AGEING PROCEDURES</option>
           <option value="CHEMICAL PEEL TREATMENT">
             CHEMICAL PEEL TREATMENT
           </option>
           <option value="SKIN CONCERNS">SKIN CONCERNS</option>
           <option value="MAKEOVER">MAKEOVER</option>
-          <option value="AKIN MAINTENANACE">AKIN MAINTENANACE</option>
+          <option value="AKIN MAINTENANACE">SKIN MAINTENANACE</option>
           <option value="SKIN CONCERNS">SKIN CONCERNS</option>
           <option value="HAIR TREATMENTS">HAIR TREATMENTS</option>
         </select>
