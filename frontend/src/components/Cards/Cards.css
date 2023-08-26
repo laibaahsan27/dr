@@ -8,7 +8,7 @@
   .cardsCON{
      display: flex;
      flex-wrap: wrap;
-     gap: 70px;
+     gap: 60px;
      row-gap: 60px;
      justify-content: center;
      margin: 0px 7%;
@@ -82,10 +82,5 @@
       row-gap: 40px;
       justify-content: center;
       margin: 0px auto;
-   }
-  }
-  @media(max-width: 1286px) and (min-width: 767px){
-    .cardsCON{
-      /* margin: 0px 140px; */
    }
   }
