@@ -90,7 +90,7 @@ export default function Cards() {
             return (
               <div className="outerLIST3" key={list3.id}>
                 <a href={list3.a}>
-                <HoverImage className="cards" defaultImg={list3.image} hoverImg={list3.hover} height={250} width={300} />
+                <HoverImage className="cards" defaultImg={list3.image} hoverImg={list3.hover} height={210} width={280} />
                 </a>
               </div>
             );
