@@ -23,13 +23,13 @@ export default function Footer() {
         <div>
             <ul className='footerUL'>
                 <li className='headLI'>SERVICES</li>
-                <li><a href="service1">Anti-ageing Procedures</a></li>
-                <li><a href="service3">Skin Concerns</a></li>
-                <li><a href="service4">Chemical Peel Treatment</a></li>
-                <li><a href="service5">Skin Maintenance</a></li>
-                <li><a href="service2">Body Treatments</a></li>
-                <li><a href="service6">Hair Treatments</a></li>
-                <li><a href="service7">Makeover</a></li>
+                <li><a className='footerhover' href="service1">Anti-ageing Procedures</a></li>
+                <li><a className='footerhover'href="service3">Skin Concerns</a></li>
+                <li><a className='footerhover'href="service4">Chemical Peel Treatment</a></li>
+                <li><a className='footerhover'href="service5">Skin Maintenance</a></li>
+                <li><a className='footerhover'href="service2">Body Treatments</a></li>
+                <li><a className='footerhover'href="service6">Hair Treatments</a></li>
+                <li><a className='footerhover'href="service7">Makeover</a></li>
             </ul>
         </div>
         <div>
