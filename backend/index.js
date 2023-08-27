@@ -5,6 +5,8 @@ const routerAdmin = require('./routes/adminRoutes');
 const bcrypt = require('bcrypt');
 require('dotenv').config();
 const User = require('./Models/Admin');
+const ServiceRequest = require('./Models/ServiceRequest');
+const routerService = require('./routes/seviceRoutes');
 
 const app = express();
 app.use(express.json());
@@ -19,24 +21,7 @@ mongoose.connect(mongoURI, {
 });
 
 app.use('/api',routerAdmin);
-
-
-// app.post('/api/login', async (req, res) => {
-//   const { username, password } = req.body;
-
-//   try {
-//     const user = await User.findOne({ username }); // Fetch the user from the database
-
-//     if (user && (await bcrypt.compare(password, user.password))) {
-//       res.json({ message: 'Admin login successful' });
-//     } else {
-//       res.json({ message: 'Admin login unsuccessful' });
-//     }
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({ message: 'An error occurred during login' });
-//   }
-// });
+app.use('/api',routerService);
 
 
 const PORT = process.env.PORT || 5000;

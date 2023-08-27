@@ -6,7 +6,8 @@ import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading/ServiceHeading";
 import Nav from '@/components/NavService/NavService'
 import TWO from '../../images/facenumbers.svg'
-
+import Foot from "@/components/Footer/Footer";
+import Appointment from "../../components/appointment/appointment.jsx";
 export default function page() {
   const list = [
     {
@@ -128,8 +129,13 @@ export default function page() {
         <div className="servicePagesCard">
           <ServiceCard />
         </div>
+        <div className="servicePagesCardPhone">
+          <Appointment />
+        </div>
       </div>
     </div>
+    <Foot />
+
     </>
   );
 }

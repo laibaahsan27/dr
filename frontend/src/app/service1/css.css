@@ -76,13 +76,12 @@
 .phoneservice1list{
     display: none;
 }
-
+.servicePagesCardPhone{
+    display: none;
+}
 @media (max-width: 768px) {
-    .navbar{
-        background-color: rgba(187, 79, 119, 1);
-    }
-    .logoName {
-        color: #FBE8EF;
+    .servicePagesCardPhone{
+        display: block;
     }
     .phoneservice1list{
         display: block;
@@ -134,8 +133,9 @@
         line-height: 20px;
     }
     .servicePagesCard{
+        display: none;
         margin-right: auto;
-        margin-left: 0;
+        margin-left: 0px;
     }
     .serviceCover{
         flex-direction: column;

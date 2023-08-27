@@ -9,6 +9,8 @@ import ServiceText from "@/components/ServiceText/ServiceText";
 import SvCard from "@/components/SvCard/SvCard";
 import mobile from "../../images/sv5-m.png";
 import Nav from '@/components/NavService/NavService'
+import Foot from "@/components/Footer/Footer";
+
 import Appointment from "@/components/appointment/appointment";
 export default function page() {
   // const windowWidth = window.innerWidth;
@@ -108,6 +110,7 @@ export default function page() {
           <Appointment />
         </div>
       </div>
+      <Foot/>
     </div>
   );
 }

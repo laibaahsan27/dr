@@ -90,12 +90,12 @@
 .legsimg{
     display: none;
 }
+.servicePagesCardPhone{
+    display: none;
+}
 @media (max-width: 768px) {
-    .navbar{
-        background-color: rgba(187, 79, 119, 1);
-    }
-    .logoName {
-        color: #FBE8EF;
+    .servicePagesCardPhone{
+        display: block;
     }
     .legsdesktop{
         display: none;
@@ -121,12 +121,12 @@
     }
     .service2headrightsec{
         text-align: left;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 24px;
     }
     .service2secrighttxt{
-        font-size: 20px;
-        padding: 20px 0;
+        font-size: 16px;
+        padding: 8px 0 0 0;
         line-height: 112.4%;
     }
     .service2CoverImage{
@@ -153,7 +153,15 @@
         flex-direction: column;
     }
     .servicePagesCard{
+        display: none;
         margin-right: auto;
-        margin-left: 0;
+        margin-left: 0px;
+    }
+    .textservice2mytext{
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .headservice2mytxt{
+        font-size: 20px;
     }
 }
