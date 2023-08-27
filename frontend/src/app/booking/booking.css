@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito+Sans:wght@300&display=swap');
+.booking-heading p:first-child {
+  color: #bb4f77;
+  font-family:"Nunito Sans";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 93.9%; /* 46.95px */
+  text-transform: capitalize;
+  margin: 0;
+}
+.booking-heading p:last-child{
+    color: #bb4f77;
+    font-family:"Nunito Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 93.9%; /* 46.95px */
+   margin: 20px 30px;
+}
+.booking-heading{
+    text-align: center;
+    font-family:"Nunito Sans";
+}
+.booking-main{
+    display: flex;
+    flex-direction: row;
+
+}
+.booking-main-left{
+    width: 50%;
+    background-color: #BB4F77;
+    padding: 60px 75px;
+}
+@media(max-width:768px){
+    .booking-heading p:first-child {
+        font-size: 23px;
+    }
+    .booking-heading p:last-child{
+        font-size: 18px;
+    }
+}
