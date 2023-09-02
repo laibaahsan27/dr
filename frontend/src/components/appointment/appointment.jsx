@@ -43,9 +43,9 @@ export default function appointment() {
   };
   return (
     <div className="bookA">
-      <div className="bookForm">
+      <div >
+      <form className="bookForm" onSubmit={handleSubmit}>
       <div className="contnow">contact now</div>
-      <form onSubmit={handleSubmit}>
         <input className="bookInput" type="text" placeholder="Full Name" value={formData.fullName}
                 onChange={handleFormChange} name="fullName"  />
         <input className="bookInput" type="text" placeholder="Mobile Number" name="phoneNumber" value={formData.phoneNumber}
