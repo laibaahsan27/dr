@@ -6,12 +6,42 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./contactCard.css";
+import axios from "axios";
 
 const ContactCard = () => {
-  const [age, setAge] = useState("");
+  const [service, setService] = useState("");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    email: "",
+  });
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+  const handleServiceChange = (event) => {
+    setService(event.target.value);
+  };
+
+  const handleFormChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await axios.post("http://localhost:5000/api/submit", {
+        ...formData,
+        selectedService: service,
+      })
+
+      console.log("Form submission response:", response.data);
+      const msg= response.data.message;
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
@@ -23,7 +53,7 @@ const ContactCard = () => {
         </div>
         <div className="ccInner">
           <div>
-            <form className="ccInput" action="">
+            <form className="ccInput" onSubmit={handleSubmit}>
               <TextField
                 className="SFinput s1"
                 id="standard-basic"
@@ -31,6 +61,9 @@ const ContactCard = () => {
                 label="Full Name"
                 variant="standard"
                 sx={{ width: "100%" }}
+                value={formData.fullName}
+                onChange={handleFormChange}
+                name="fullName"
               />
               <TextField
                 className="SFinput s2"
@@ -39,6 +72,9 @@ const ContactCard = () => {
                 label="Phone Number"
                 variant="standard"
                 sx={{ width: "100%" }}
+                value={formData.phoneNumber}
+                onChange={handleFormChange}
+                name="phoneNumber"
               />
               <TextField
                 className="SFinput s3"
@@ -47,19 +83,33 @@ const ContactCard = () => {
                 label="Email"
                 sx={{ width: "100%" }}
                 variant="standard"
+                value={formData.email}
+                onChange={handleFormChange}
+                name="email"
               />
-              <FormControl sx={{ width: "100%" }} className="s4">
-                <InputLabel id="demo-simple-select-label">Age</InputLabel>
+               <FormControl sx={{ width: "100%" }} className="s4">
+                <InputLabel id="demo-simple-select-label">Services</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  value={age}
-                  label="Age"
-                  onChange={handleChange}
+                  value={service}
+                  label="Services"
+                  onChange={handleServiceChange}
+
                 >
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={"Anti-ageing Procedures"}>
+                    Anti-ageing Procedures
+                  </MenuItem>
+                  <MenuItem value={"Chemical Peel Treatment"}>
+                    Chemical Peel Treatment
+                  </MenuItem>
+                  <MenuItem value={"Skin Concerns"}>Skin Concerns</MenuItem>
+                  <MenuItem value={"Makeover"}>Makeover</MenuItem>
+                  <MenuItem value={"Skin Maintenance"}>
+                    Skin Maintenance
+                  </MenuItem>
+                  <MenuItem value={"Body Treatments"}>Body Treatments</MenuItem>
+                  <MenuItem value={"Hair Concerns"}>Hair Concerns</MenuItem>
                 </Select>
               </FormControl>
               <div className="boa s5">
