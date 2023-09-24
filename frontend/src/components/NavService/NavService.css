@@ -173,17 +173,28 @@
 }
 
 .mega-box {
-  border-radius: 25px;
+  /* border-radius: 25px; */
   background: #f7dee4;
+  /* background-color: black; */
   position: absolute;
-  top: 85px;
-  width: 88%;
+  top: 60px;
+  width: fit-content;
   left: 0;
   right: 0;
   margin: 0 auto;
   z-index: 100;
-  padding: 30px 50px;
+  padding: 15px 20px;
   display: none;
+}
+.navdownarrow2{
+  display: flex;
+  padding-left: 10px;
+}
+.anti_submenu, .hair_submenu,.bodu_submenu, .skin_submenu, .make_submenu, .maint_submenu{
+  display: none;
+}
+.anti_submenu:not(.hidden), .hair_submenu:not(.hidden), .bodu_submenu:not(.hidden), .skin_submenu:not(.hidden), .make_submenu:not(.hidden), .maint_submenu:not(.hidden){
+  display: block;
 }
 .mega-box.active {
   display: block;
@@ -193,15 +204,17 @@
   top: -15px;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 0 ;
 }
 .row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 0px; */
 }
-.submenuhead {
+.submenuhead { 
   display: flex;
+  justify-content: space-between;
   color: #bb4f77;
   font-family: "Nunito Sans";
   font-size: 20px;
@@ -210,8 +223,8 @@
   line-height: 117.5%;
   text-transform: uppercase;
   text-decoration: none;
-  width: 200px;
-  margin: 15px 0;
+  width: 330px;
+  padding: 5px 0;
 }
 .submenuitem {
   padding: 5px 0px;
