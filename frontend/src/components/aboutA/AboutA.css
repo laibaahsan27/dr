@@ -1,0 +1,66 @@
+.AboutA{
+    display: flex;
+    justify-content: space-evenly;
+}
+.A-txt{
+    display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;
+color: #9C003C;
+font-family: "Nunito Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 119.9%; /* 23.98px */
+letter-spacing: 0.8px;
+align-self: center;
+}
+.bold{
+    font-weight: bolder;
+}
+.mimg{
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+   .A-img{
+    width: 439px;
+    color: transparent;
+    height: 558px;
+   }
+}
+@media screen and (max-width: 768px) {
+    .AboutA{
+        flex-direction: column-reverse;
+
+        
+    }
+    .A-img{
+        width:fit-content;
+        height: fit-content;
+        margin-top: 130px;
+        align-self: center;
+    }
+    .A-txt{
+        margin-top: 30px;
+        font-size: 18px;
+        gap: 25px;
+    }
+    .A-txt p{
+        margin: 0;
+        width: 350px;
+
+    }
+    .AboutA br{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .mimg{
+        display: block;
+       
+    }
+    
+}
+    
