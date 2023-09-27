@@ -42,7 +42,7 @@ export default function page() {
       id: 2,
       heading: "Hifu",
       content:
-        "Harness the power of HIFU (High-Intensity Focused Ultrasound) technology to stimulate collagen production deep within your skin. This non-invasive treatment tightens and lifts sagging skin, reducing the appearance of wrinkles and giving you a youthful and radiant complexion.",
+        "HIFU is a safe and non-invasive procedure, allowing for a convenient treatment experience without any incision or downtime. The focused ultrasound energy precisely targets specific areas, effectively rejuvenating the skin's foundation and promoting gradual skin tightening over time. With its FDA-approved status, HIFU is trusted by professionals and patients alike as an effective solution for achieving a more youthful and lifted appearance without the risks associated with surgery. Enjoy the benefits of a natural-looking and refreshed complexion, making HIFU an ideal choice for those seeking long-lasting results.",
     },
   ];
   const list4 = [
@@ -68,13 +68,13 @@ export default function page() {
       id: 4,
       heading: "Aqua gold",
       content:
-        "Experience the rejuvenating effects of Aqua Gold, a cutting-edge micro-needling treatment combined with the infusion of customized serums. This innovative procedure not only revitalizes the skin but also addresses specific concerns, improving tone, texture, and overall skin health. Aqua Gold's unique delivery system allows for deeper penetration of potent serums, resulting in a radiant and glowing complexion.",
+        "Experience the rejuvenating effects of Aqua Gold, a cutting-edge gold stamp micro-needling treatment combined with the infusion of customized serums. This innovative procedure not only revitalizes the skin but also addresses specific concerns, improving tone, texture, and overall skin health. Aqua Gold's unique delivery system allows for deeper penetration of potent serums, resulting in a radiant and glowing complexion.",
     },
     {
       id: 5,
       heading: "Exillis",
       content:
-        "Exilis, a non-invasive radiofrequency treatment, offers a comprehensive solution for skin contouring, skin tightening, fat reduction, and cellulite improvement. The advanced technology precisely targets problem areas, stimulating collagen production and promoting a smoother and firmer skin texture. With Exilis, you can achieve your desired body shape and enhance your natural beauty without surgery or downtime. ",
+        "Exilis, a non-invasive radiofrequency treatment, offers a comprehensive solution for skin contouring, skin tightening, fat reduction, and cellulite improvement. The advanced technology precisely targets problem areas, stimulating collagen production and promoting a smoother and firmer skin texture. With Exilis, you can achieve your desired  face contouring and body contouring and enhance your natural beauty without surgery or downtime. ",
     },
   ];
 
@@ -102,7 +102,7 @@ export default function page() {
           <div className="mycontent">
             <span className="filler">Fillers: </span>Using a selection of
             fillers, we enhance facial contours, restore lost volume, and reduce
-            the appearance of wrinkles, giving your face a naturally youthful
+            the appearance of wrinkles,sunken eyes giving your face a naturally youthful
             and refreshed look. Botox: Our
           </div>
           <div className="mycontent2">

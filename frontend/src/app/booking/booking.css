@@ -30,7 +30,94 @@
 .booking-main-left{
     width: 50%;
     background-color: #BB4F77;
-    padding: 60px 75px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+}
+.left-h{
+    font-size: 21px;
+    margin: 0 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.right-h{
+    font-size: 21px;
+    margin: 0 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.booking-main-right{
+    width: 50%;
+    text-align: center;
+    background-color: #F7DEE49C;
+    color: #BB4F77;
+    font-size: 26px;
+    font-weight: 500;
+}
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
+    color: #F7DEE4 !important;
+    font-size: 17px !important;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:after{
+    border-bottom: 2px solid #F7DEE4 !important;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 2px solid #F7DEE4 !important;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before {
+    border-bottom: 2px solid #F7DEE4 !important;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root{
+    color: #F7DEE4 !important;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: #F7DEE4 !important;
+
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+    color: #F7DEE4 !important;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+    color: #F7DEE4 !important;
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+    color: #C36386 !important;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: #F7DEE4 !important;
+}
+.css-bpeome-MuiSvgIcon-root-MuiSelect-icon{
+    color: #F7DEE4 !important;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: #F7DEE4 !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: #F7DEE4 !important;
+}
+.SFinput::placeholder{
+    color: #F7DEE4;
+}
+.css-1x51dt5-MuiInputBase-input-MuiInput-input{
+color: white !important;
+}
+.serviceFormInner{
+    display: flex;
+    flex-direction: column;
+}
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+width: 500px;
+}
+.left-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.SFinput{
+    margin-bottom: 20px;
 }
 @media(max-width:768px){
     .booking-heading p:first-child {

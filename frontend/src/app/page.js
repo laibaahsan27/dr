@@ -9,8 +9,6 @@ import RIGHT from "../images/CaretRight.svg";
 import RIGHTTWO from "../images/CaretRight2.svg";
 import BGABOUT from "../images/aboutBG.svg";
 import AWARDS from "../images/Trophy.svg";
-import HEADDESK from "../images/andAwards.svg";
-import HEADPHONE from "../images/andAwardsPhone.svg";
 import CARDS from "../components/Cards/Cards.jsx";
 import Appointment from "../components/appointment/appointment.jsx";
 import Foot from "@/components/Footer/Footer";
@@ -108,11 +106,16 @@ export default function Home() {
           Soul
         </div>
         <div className="heroBTNS">
+          <a href="booking">
           <button className="heroBTN1">
-            Book an appointment{" "}
+            Book an appointment
             <Image className="rightIMG" src={RIGHT} alt="" />
           </button>
+          </a>
+          <a href="booking">
           <button className="heroBTN2">Online Consultation</button>
+
+          </a>
         </div>
         {list.map((list) => {
           return (

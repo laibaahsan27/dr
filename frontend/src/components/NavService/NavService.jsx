@@ -7,18 +7,72 @@ import LOGO from "../../images/logoSVG.svg";
 import RIGHT from "../../images/CaretRight.svg";
 import menu from "../../images/newham.svg";
 import cross from "../../images/cross.svg";
-import tri from "../../images/Rectangle.svg";
+import triangle from "../../images/Rectangle.svg";
 import insta from "../../images/InstagramLogonav.svg";
 import face from "../../images/FacebookLogonav.svg";
 import mail from "../../images/Envelopenav.svg";
 import down from "../../images/Caretdown.svg";
+import navright from "../../images/CaretRightnav.svg";
 
 export default function Nav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
   const [showMegaBox, setShowMegaBox] = useState(false);
   const [showResponsiveMenu, setShowResponsiveMenu] = useState(false);
+  const [isAntiSubMenuVisible, setIsAntiSubMenuVisible] = useState(false);
 
+  const handleAntiMenuMouseEnter = () => {
+    setIsAntiSubMenuVisible(true);
+  };
+
+  const handleAntiMenuMouseLeave = () => {
+    setIsAntiSubMenuVisible(false);
+  };
+  const [isSkinsubMenuVisible, setIsSkinsubMenuVisible] = useState(false);
+
+  const handleSkinMenuMouseEnter = () => {
+    setIsSkinsubMenuVisible(true);
+  };
+
+  const handleSkineMenuMouseLeave = () => {
+    setIsSkinsubMenuVisible(false);
+  };
+  const [isMakeSubMenuVisible, setIsMakeSubMenuVisible] = useState(false);
+
+  const handleMakeMenuMouseEnter = () => {
+    setIsMakeSubMenuVisible(true);
+  };
+
+  const handleMakeMenuMouseLeave = () => {
+    setIsMakeSubMenuVisible(false);
+  };
+  const [isMaintSubMenuVisible, setIsMaintSubMenuVisible] = useState(false);
+
+  const handleMAintMenuMouseEnter = () => {
+    setIsMaintSubMenuVisible(true);
+  };
+
+  const handleMaintMenuMouseLeave = () => {
+    setIsMaintSubMenuVisible(false);
+  };
+  const [isBodySubMenuVisible, setIsBodySubMenuVisible] = useState(false);
+
+  const handleBodyMenuMouseEnter = () => {
+    setIsBodySubMenuVisible(true);
+  };
+
+  const handleBodyMenuMouseLeave = () => {
+    setIsBodySubMenuVisible(false);
+  };
+  const [isHairSubMenuVisible, setIsHairSubMenuVisible] = useState(false);
+
+  const handleHairMenuMouseEnter = () => {
+    setIsHairSubMenuVisible(true);
+  };
+
+  const handleHairMenuMouseLeave = () => {
+    setIsHairSubMenuVisible(false);
+  };
   const toggleMenu = () => {
     if (!isMenuOpen) {
       document.body.style.overflowY = "hidden";
@@ -61,10 +115,9 @@ export default function Nav(props) {
           </motion.div>
           <span className="logoNAME">Dr Akanksha Agarwal</span>
         </a>
-        <div
+        {/* <div
           className={`mega-box ${showMegaBox ? "active" : ""}`}
-          onMouseLeave={() => setShowMegaBox(false)}
-        >
+          onMouseLeave={() => setShowMegaBox(false)}>
           <Image className="navarrow" src={tri} alt="" />
           <div className="contentN">
             <div className="row">
@@ -143,7 +196,7 @@ export default function Nav(props) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={`menu ${isMenuOpen ? "active" : ""}`}>
           <ul className="middleNav">
@@ -170,11 +223,216 @@ export default function Nav(props) {
                 Services
                 <Image className="navdownarrow" src={down} alt="" />
               </a>
-              <ul
-                className={`responsiveMENUCON ${
-                  showResponsiveMenu ? "active" : ""
-                }`}
-              ></ul>
+              <div
+                className={`mega-box ${showMegaBox ? "active" : ""}`}
+                onMouseLeave={() => setShowMegaBox(false)}
+              >
+                <Image className="navarrow" src={triangle} alt="" />
+                <div className="contentN">
+                  <div className="row">
+                    <div>
+                      <a
+                        className="submenuhead anti_menu"
+                        href="service1"
+                        onMouseEnter={handleAntiMenuMouseEnter}
+                        onMouseLeave={handleAntiMenuMouseLeave}
+                      >
+                        Anti-ageing Procedures
+                        <Image
+                          className="navdownarrow2"
+                          src={navright}
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        className={`anti_submenu ${
+                          isAntiSubMenuVisible ? "" : "hidden"
+                        }`}
+                        onMouseEnter={handleAntiMenuMouseEnter}
+                        onMouseLeave={handleAntiMenuMouseLeave}
+                      >
+                        <span className="submenuitem">
+                          Non surgical face - lift
+                        </span>
+                        <span className="submenuitem">Liquid Lift</span>
+                        <span className="submenuitem">Mesobotox</span>
+                        <span className="submenuitem">Microneedling</span>
+                        <span className="submenuitem">Radiofrequency</span>
+                        <span className="submenuitem">Hifu</span>
+                        <span className="submenuitem">Ultherapy</span>
+                        <span className="submenuitem">Aqua Gold</span>
+                        <span className="submenuitem">Exillis</span>
+                        <span className="submenuitem">
+                          PRP with microneedling
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <a
+                        className="submenuhead bodu_menu"
+                        href="service2"
+                        onMouseEnter={handleBodyMenuMouseEnter}
+                        onMouseLeave={handleBodyMenuMouseLeave}
+                      >
+                        Body Treatment
+                        <Image
+                          className="navdownarrow2"
+                          src={navright}
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        className={`bodu_submenu ${
+                          isBodySubMenuVisible ? "" : "hidden"
+                        }`}
+                        onMouseEnter={handleBodyMenuMouseEnter}
+                        onMouseLeave={handleBodyMenuMouseLeave}
+                      >
+                        <span className="submenuitem">Tummy tightening</span>
+                        <span className="submenuitem">Double chin removal</span>
+                        <span className="submenuitem">Body polishing</span>
+                        <span className="submenuitem">Underarms darkness</span>
+                        <span className="submenuitem">Excessive sweating</span>
+                        <span className="submenuitem">
+                          Laser hair reduction
+                        </span>
+                        <span className="submenuitem">
+                          Stretch marks removal
+                        </span>
+                        <span className="submenuitem">Tattoo removal</span>
+                      </div>
+                    </div>
+                    <div>
+                      <a
+                        className="submenuhead maint_menu"
+                        href="service5"
+                        onMouseEnter={handleMAintMenuMouseEnter}
+                        onMouseLeave={handleMaintMenuMouseLeave}
+                      >
+                        Skin Maintenance
+                        <Image
+                          className="navdownarrow2"
+                          src={navright}
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        className={`maint_submenu ${
+                          isMaintSubMenuVisible ? "" : "hidden"
+                        }`}
+                        onMouseEnter={handleMAintMenuMouseEnter}
+                        onMouseLeave={handleMaintMenuMouseLeave}
+                      >
+                        <span className="submenuitem">Aquaoxy facial</span>
+                        <span className="submenuitem">Meso glow</span>
+                        <span className="submenuitem">
+                          Semi permanent make up
+                        </span>
+                        <span className="submenuitem">
+                          PRP for face, Body polishing
+                        </span>
+                        <span className="submenuitem">Hydrafacial</span>
+                        <span className="submenuitem">Oxygeneo facial</span>
+                        <span className="submenuitem">Power glow facial</span>
+                        <span className="submenuitem">Photofacial</span>
+                      </div>
+                    </div>
+                    <div>
+                      <a
+                        className="submenuhead skin_menu"
+                        href="service3"
+                        onMouseEnter={handleSkinMenuMouseEnter}
+                        onMouseLeave={handleSkineMenuMouseLeave}
+                      >
+                        Skin Concerns
+                        <Image
+                          className="navdownarrow2"
+                          src={navright}
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        className={`skin_submenu ${
+                          isSkinsubMenuVisible ? "" : "hidden"
+                        }`}
+                        onMouseEnter={handleSkinMenuMouseEnter}
+                        onMouseLeave={handleSkineMenuMouseLeave}
+                      >
+                        <span className="submenuitem">Acne Treatment</span>
+                        <span className="submenuitem">Rosacea</span>
+                        <span className="submenuitem">Sun and age spots</span>
+                        <span className="submenuitem">
+                          Under eye dark circles
+                        </span>
+                        <span className="submenuitem">Brown Spots</span>
+                        <span className="submenuitem">Freckles Treatments</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <a
+                        className="submenuhead make_menu"
+                        href="service7"
+                        onMouseEnter={handleMakeMenuMouseEnter}
+                        onMouseLeave={handleMakeMenuMouseLeave}
+                      >
+                        makeover
+                        <Image
+                          className="navdownarrow2"
+                          src={navright}
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        className={`make_submenu ${
+                          isMakeSubMenuVisible ? "" : "hidden"
+                        }`}
+                        onMouseEnter={handleMakeMenuMouseEnter}
+                        onMouseLeave={handleMakeMenuMouseLeave}
+                      >
+                        <span className="submenuitem">
+                          Bride and groom- semipermanent makeup
+                        </span>
+                        <span className="submenuitem">Microblading</span>
+                        <span className="submenuitem">Lip coloring</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <a
+                        className="submenuhead hair_menu"
+                        href="service6"
+                        onMouseEnter={handleHairMenuMouseEnter}
+                        onMouseLeave={handleHairMenuMouseLeave}
+                      >
+                        hair treatments
+                        <Image
+                          className="navdownarrow2"
+                          src={navright}
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        className={`hair_submenu ${
+                          isHairSubMenuVisible ? "" : "hidden"
+                        }`}
+                        onMouseEnter={handleHairMenuMouseEnter}
+                        onMouseLeave={handleHairMenuMouseLeave}
+                      >
+                        <span className="submenuitem">PRP Treatments</span>
+                        <span className="submenuitem">Mesotherapy</span>
+                        <span className="submenuitem">Hair transplant</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <a className="submenuhead" href="service4">
+                        Chemical Peel Treatment
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li className="liNav" onClick={closeMenu}>
               <a
@@ -236,8 +494,14 @@ export default function Nav(props) {
               </a>
             </div>
             <div className="navresponbtn">
-              <button className="bookbtnnavrespon">Book an appointment</button>
-              <button className="conbtnnavrespon">Online Consultation</button>
+              <a href="booking">
+                <button className="bookbtnnavrespon">
+                  Book an appointment
+                </button>
+              </a>
+              <a href="booking">
+                <button className="conbtnnavrespon">Online Consultation</button>
+              </a>
             </div>
             <div className="respondiv3">
               <a href="/" className="navnamebelow">

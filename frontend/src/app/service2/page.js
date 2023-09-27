@@ -29,7 +29,7 @@ export default function page() {
       content:
         "Banish the appearance of a double chin with our specialized treatment. Our advanced techniques target and eliminate stubborn fat deposits under the chin, providing a more defined and youthful jawline.",
       content2:
-        "The treatments target only the unwanted fat cells, leaving surrounding tissues unharmed. Once the treated fat cells are eliminated, they are gone for good, offering long-lasting and natural-looking results.",
+        "These treatments target only the unwanted fat cells, leaving surrounding tissues unharmed. Once the treated fat cells are eliminated, they are gone for good, offering long-lasting and natural-looking results.",
       content3:
         "Each individual's double chin is unique, and our experienced practitioners will create a personalized treatment plan tailored to your specific goals and anatomy.",
     },
@@ -39,7 +39,7 @@ export default function page() {
       id: 1,
       heading: "Tummy Tightening",
       content:
-        "Our tummy tightening treatment utilizes innovative technologies to firm and tone the abdominal area, helping you achieve a more contoured and sculpted midsection. Say goodbye to loose skin and embrace a more defined waistline with this non-invasive and results-driven procedure.",
+        "Our tummy tightening treatment utilizes innovative  (both RF and ultrasonic) technologies to firm and tone the abdominal area, helping you achieve a more contoured and sculpted midsection. Say goodbye to loose skin and embrace a more defined waistline with this non-invasive and results-driven procedure.",
     },
     {
       id: 2,
