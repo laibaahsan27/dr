@@ -1,0 +1,79 @@
+.AIHeading {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #bb4f77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.AIimages{
+    margin: 0px auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.AIimage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+    flex-direction: column;
+}
+.AIimg{
+    /* position: relative; */
+    margin-top: 20px;
+    width: 76%;
+    height: auto;
+}
+.AItext{
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #9C003C;
+}
+.BA{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000B2;
+    padding: 8px;
+    background-color: #FFFFFFB2;
+    bottom: 50px;
+
+}
+.AIBF{
+    left: 37px;
+}
+.AIAF{
+    right: 38px;
+}
+@media (max-width: 768px) {
+    .AIimages{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .AIHeading{
+        font-family: Nunito Sans;
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
