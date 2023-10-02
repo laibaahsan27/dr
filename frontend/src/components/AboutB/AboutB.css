@@ -45,10 +45,9 @@ font-style: normal;
 font-weight: 700;
 line-height: 115.9%; /* 81.13px */
 }
-.Ab-text2 p:nth-child(2){
+.Ab-text2 p{
     color: #BB4F77;
 font-family:" Nunito Sans";
-font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: 115.9%; /* 27.816px */
