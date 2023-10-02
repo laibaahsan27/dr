@@ -11,7 +11,7 @@ export default function page() {
     <>
       <Nav />
       <AboutA />
-      {/* <AboutB/> */}
+      <AboutB/>
       <AboutImages />
       <ContactCard />
       <Foot />

@@ -2,6 +2,7 @@ import React from "react";
 import "./booking.css";
 import Nav from "@/components/Nav/Nav";
 import TextField from "@mui/material/TextField";
+import Foot from "@/components/Footer/Footer";
 
 const page = () => {
   return (
@@ -75,6 +76,7 @@ const page = () => {
                 variant="standard"
                 // value={formData.fullName}
                 // onChange={handleFormChange}
+      
               />
               <TextField
                 name="MobileNumber"
@@ -100,6 +102,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Foot />
     </div>
   );
 };
