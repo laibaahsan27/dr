@@ -6,9 +6,9 @@
   border: 1px solid #e3afc0;
   background: #bb4f77;
   display: inline-flex;
-  height: 105px;
-  padding: 34px 0.149px 33.966px 41px;
-  justify-content: flex-end;
+  height: 107px;
+  padding: 34px 0.149px 33.966px 0px;
+  justify-content: center;
   align-items: center;
   flex-shrink: 0;
   color: #fff5f4;
@@ -24,32 +24,46 @@ p {
 }
 .A-Box2 {
   display: flex;
-  width: 480px;
-  height: 105px;
+  /* width: 480px; */
+  height: 175px;
   padding: 0px 29px 0px 59px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 29px;
-  flex-shrink: 0;
+  padding-left: 0px;
+    padding-right: 0px;
+    border: 1px solid #E3AFC0;
 }
 .Ab-text {
   display: flex;
+  /* row-gap: 28px; */
+  column-gap: 30px;
 }
 .Ab-text p {
   color: #9c003c;
   font-family: "Nunito Sans";
-  font-size: 70px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 700;
   line-height: 115.9%; /* 81.13px */
 }
-.Ab-text2 p {
+.Ab-text2{
+  justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.Ab-text2 p{
+  font-size: 26px;
   color: #bb4f77;
   font-family: " Nunito Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 115.9%; /* 27.816px */
   text-transform: uppercase;
+}
+#Ab-text2-sub{
+  font-size: 20px;
+    font-weight: 400;
 }
 @media (max-width: 768px) {
     .AboutB{
@@ -64,6 +78,7 @@ p {
     padding: 0;
   }
   .A-Box2{
+    height: 105px;
     border-bottom: 1px solid #E3AFC0;
     justify-content: flex-start;
     width: 100%;
