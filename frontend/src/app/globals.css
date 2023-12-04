@@ -303,6 +303,49 @@ h2 {
 .aboutBG{
   display: none;
 }
+.pink{
+  display: none;
+}
+.heroBG{
+  display: none;
+}
+@media(min-width: 1600px){
+  .heroCON{
+    background-image: none;
+    background-color: #F7DEE4;
+    box-sizing: border-box;
+    padding-left: 55px;
+
+  }
+  .docImg{
+    left: 50%;
+    z-index: 1;
+
+  }
+  .homeAbout{
+    padding-left: 80px;
+  }
+  .pink{
+    display: revert;
+    z-index: -1;
+    width: 100%;
+  }
+  .cardsCON{
+    display: flex;
+    column-gap: 290px;
+  }
+  .heroBG{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .herBG{
+    position: absolute;
+    color: transparent;
+    height: 497px;
+    z-index: 1;
+    width: 1047px;
+  }
+}
 
 @media(max-width: 768px){
   .heroCON{

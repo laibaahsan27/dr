@@ -12,7 +12,8 @@ import AWARDS from "../images/Trophy.svg";
 import CARDS from "../components/Cards/Cards.jsx";
 import Appointment from "../components/appointment/appointment.jsx";
 import Foot from "@/components/Footer/Footer";
-import Nav from '@/components/Nav/Nav'
+import Nav from '@/components/Nav/Nav';
+import Pink from '../images/pink shape bg.svg';
 // import BG from '../images/newhero.svg'
 
 
@@ -82,6 +83,9 @@ export default function Home() {
   return (
     <div>
       <Nav/>
+      <div className="heroBG">
+        <Image className="herBG" src={Pink} alt="" />
+      </div>
       <div className="heroCON">
         <div className="heroRightTxt">
           Hi, I’m Dr. Akanksha Agarwal{" "}
@@ -101,6 +105,7 @@ export default function Home() {
         </motion.div>
 
         <Image className="docImg" src={DOC} alt="" />
+        {/* <Image className="pink" src={Pink} alt="" /> */}
         <div className="textThree">
           Experience Unmatched Bliss! Pamper and Rejuvenate Your Mind, Body, and
           Soul

@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
             <ul className='footerUL'>
                 <li className='headLI'>LOCATION</li>
-                <li className='footerLI'>NR-38, First Floor</li>
+                <li className='footerLI'>NR-38, Ground Floor</li>
                 <li>NATHUPUR Road</li>
                 <li>NATHUPUR Sector 24</li>
                 <li>Gurugram Haryana 122002</li>

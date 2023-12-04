@@ -85,7 +85,8 @@ export default function Cards() {
           </div>
         </div>
 
-        <div className="cardsCON">
+       <div className="cardsC">
+       <div className="cardsCON">
           {list3.map((list3) => {
             return (
               <div className="outerLIST3" key={list3.id}>
@@ -96,6 +97,7 @@ export default function Cards() {
             );
           })}
         </div>
+       </div>
       </div>
     </div>
   );

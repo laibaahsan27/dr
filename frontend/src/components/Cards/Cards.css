@@ -12,6 +12,7 @@
      row-gap: 60px;
      justify-content: center;
      margin: 0px 7.5%;
+     max-width: 1200px;
     }
 
   .cardsheadphone{
@@ -49,6 +50,10 @@
     font-weight: 800;
     line-height: 35px;
     text-transform: uppercase;
+  }
+  .cardsC{
+    display: flex;
+    justify-content: center;
   }
   @media(max-width: 768px){
     .cardsheadphone{

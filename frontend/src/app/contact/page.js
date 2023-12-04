@@ -27,7 +27,7 @@ const page = () => {
 
   return (
     <>
-          <Nav/>
+      <Nav />
 
       <div className="contactContainer">
         <div className="headingCC">
@@ -76,7 +76,7 @@ const page = () => {
                     <h3 className="LCoh">Address</h3>
                     <div className="LCtextInner">
                       <p className="wha">
-                        NR-38, First Floor NATHUPUR Road NATHUPUR Sector 24
+                        NR-38, Ground Floor NATHUPUR Road NATHUPUR Sector 24
                         Gurugram Haryana 122002
                       </p>
                     </div>
@@ -108,7 +108,7 @@ const page = () => {
           <div className="rightcard">
             <iframe
               className="ContactMap"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.839966358022!2d77.10396117613342!3d28.48436579079244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d195ade43d93d%3A0x5f39f707c70f7dc1!2sDr%20Ritesh%20Anand!5e0!3m2!1sen!2sin!4v1692439757044!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.839763774006!2d77.10395277418029!3d28.484371890795828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fdcb63f2dad%3A0x85e24acd46520244!2sLa%20Midas%20Clinic-%20Laser%20Hair%20Removal%2C%20Tattoo%20Removal%2C%20Acne%20and%20Acne%20Scars%20%26%20Pigmentation%20in%20Gurgaon!5e0!3m2!1sen!2sin!4v1701608126783!5m2!1sen!2sin"
               width="600"
               height="450"
               style={{ border: "0" }}
@@ -122,7 +122,6 @@ const page = () => {
         <ContactCard />
       </div>
       <Foot />
-
     </>
   );
 };
